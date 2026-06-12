@@ -57,7 +57,8 @@ export const ReorderableQueueItem: FC<ReorderableQueueItemProps> = ({
       ref={setNodeRef}
       style={style}
       className={cn({
-        'pointer-events-none opacity-20': isDragging,
+        'bg-background-secondary border-primary pointer-events-none relative z-50 scale-[1.02] border opacity-80 shadow-xl':
+          isDragging,
         'cursor-grab': isReorderable,
         '[&_*]:transition-none [&_*]:duration-0': isAnyDragging,
       })}

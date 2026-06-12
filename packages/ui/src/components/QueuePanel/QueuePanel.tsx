@@ -1,11 +1,10 @@
-import { DragEndEvent, DragOverlay, DragStartEvent } from '@dnd-kit/core';
+import { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
 import { Music } from 'lucide-react';
 import { FC, useState } from 'react';
 
 import type { QueueItem as QueueItemType } from '@nuclearplayer/model';
 
 import { cn } from '../../utils';
-import { QueueItem } from '../QueueItem';
 import { type QueueItemLabels } from '../QueueItem/types';
 import { ScrollableArea } from '../ScrollableArea';
 import { QueueReorderLayer } from './QueueReorderLayer';
@@ -140,32 +139,6 @@ export const QueuePanel: FC<QueuePanelProps> = ({
               />
             ))}
           </div>
-          {reorderable && (
-            <DragOverlay dropAnimation={null}>
-              {activeId
-                ? (() => {
-                    const activeItem = items.find(
-                      (item) => item.id === activeId,
-                    );
-                    if (!activeItem) {
-                      return null;
-                    }
-                    return (
-                      <div className="pointer-events-none w-full scale-[1.02] opacity-90 shadow-2xl [&_*]:transition-none [&_*]:duration-0">
-                        <QueueItem
-                          track={activeItem.track}
-                          status={activeItem.status}
-                          isCurrent={activeItem.id === currentItemId}
-                          isCollapsed={isCollapsed}
-                          errorMessage={activeItem.error}
-                          labels={labels}
-                        />
-                      </div>
-                    );
-                  })()
-                : null}
-            </DragOverlay>
-          )}
         </QueueReorderLayer>
       </ScrollableArea>
     </div>
