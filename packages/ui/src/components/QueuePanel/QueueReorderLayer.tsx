@@ -1,4 +1,4 @@
-import type { DragEndEvent } from '@dnd-kit/core';
+import type { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
 import {
   DndContext,
   PointerSensor,
@@ -16,7 +16,7 @@ const DRAG_ACTIVATION_DISTANCE_PX = 5;
 type QueueReorderLayerProps = {
   enabled: boolean;
   items: string[];
-  onDragStart?: () => void;
+  onDragStart?: (evt: DragStartEvent) => void;
   onDragEnd?: (evt: DragEndEvent) => void;
   children: ReactNode;
 };

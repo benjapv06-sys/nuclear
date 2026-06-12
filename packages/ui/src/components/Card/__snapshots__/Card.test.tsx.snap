@@ -3,7 +3,7 @@
 exports[`Card > (Snapshot) renders correctly 1`] = `
 <div>
   <button
-    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1 focus-visible:-translate-y-1"
+    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] cursor-pointer overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1.5 focus-visible:-translate-y-1.5 transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]"
     data-headlessui-state=""
     data-testid="card"
     type="button"
@@ -16,7 +16,7 @@ exports[`Card > (Snapshot) renders correctly 1`] = `
       >
         <img
           alt="Test album"
-          class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover/card:scale-105 group-focus-visible/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
+          class="h-full w-full object-cover transition-transform duration-500 [transition-timing-function:cubic-bezier(0.25,1,0.5,1)] group-hover/card:scale-110 group-focus-visible/card:scale-110 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
           decoding="async"
           loading="lazy"
           src="https://picsum.photos/300"
@@ -68,7 +68,7 @@ exports[`Card > (Snapshot) renders correctly 1`] = `
       class="min-w-0"
     >
       <div
-        class="text-foreground truncate text-sm font-bold"
+        class="text-foreground group-hover/card:text-primary transition-colors duration-300 truncate text-sm font-bold"
         data-testid="card-title"
       >
         Test album

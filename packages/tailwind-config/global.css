@@ -109,7 +109,25 @@
 @layer base {
   body {
     @apply text-foreground bg-background cursor-default font-normal select-none;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   }
+
+  @keyframes pulse-play {
+    0% {
+      box-shadow: 0 0 0 0 var(--primary);
+    }
+    70% {
+      box-shadow: 0 0 0 8px transparent;
+    }
+    100% {
+      box-shadow: 0 0 0 0 transparent;
+    }
+  }
+
+  .animate-pulse-play {
+    animation: pulse-play 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+  }
+
 
   h1 {
     @apply font-heading font-extrabold;

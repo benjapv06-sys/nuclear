@@ -3,34 +3,34 @@
 exports[`PlayerBarSeekBar > (Snapshot) default render 1`] = `
 <DocumentFragment>
   <div
-    class="w-full select-none"
+    class="w-full select-none flex flex-col gap-1"
   >
     <div
       aria-disabled="false"
-      class="group/seek relative h-4 w-full outline-none"
+      class="group/seek relative h-3 w-full flex items-center outline-none"
     >
       <div
-        class="absolute right-0 left-0 z-10 flex h-full flex-row items-center justify-between px-2 pt-0.5 text-xs leading-none"
-      >
-        <span
-          class="text-foreground tabular-nums"
-        >
-          1:37
-        </span>
-        <span
-          class="text-foreground tabular-nums"
-        >
-          -21:37
-        </span>
-      </div>
-      <div
-        class="border-border bg-background-secondary absolute inset-0 border-t-(length:--border-width) transition-[filter,box-shadow] duration-150 ease-out group-hover/seek:brightness-105 motion-reduce:transition-none"
+        class="border-border bg-background-secondary w-full h-1 rounded-full border-(length:--border-width) relative transition-[height,filter,box-shadow] duration-200 ease-out group-hover/seek:h-1.5 group-hover/seek:brightness-105 motion-reduce:transition-none"
       >
         <div
-          class="bg-primary h-full transition-[width,filter] duration-150 ease-out group-hover/seek:brightness-110 motion-reduce:transition-none"
+          class="bg-primary h-full rounded-full transition-[width,filter] duration-300 ease-out group-hover/seek:brightness-110 motion-reduce:transition-none"
           style="width: 25%;"
         />
       </div>
+    </div>
+    <div
+      class="flex flex-row justify-between w-full px-4 text-[10px] font-bold text-foreground-secondary tracking-wide select-none leading-none -mt-0.5 pb-0.5"
+    >
+      <span
+        class="tabular-nums"
+      >
+        1:37
+      </span>
+      <span
+        class="tabular-nums"
+      >
+        -21:37
+      </span>
     </div>
   </div>
 </DocumentFragment>

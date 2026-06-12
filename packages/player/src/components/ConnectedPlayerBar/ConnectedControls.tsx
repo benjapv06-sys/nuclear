@@ -7,10 +7,17 @@ import { PlayerBar } from '@nuclearplayer/ui';
 
 import { useCoreSetting } from '../../hooks/useCoreSetting';
 import { useProviders } from '../../hooks/useProviders';
+import { useEqualizerStore } from '../../stores/equalizerStore';
 import { useQueueStore } from '../../stores/queueStore';
 import { useSoundStore } from '../../stores/soundStore';
 
-export const ConnectedControls: FC = () => {
+type ConnectedControlsProps = {
+  onEqualizerClick: () => void;
+};
+
+export const ConnectedControls: FC<ConnectedControlsProps> = ({
+  onEqualizerClick,
+}) => {
   const { t } = useTranslation('playerBar');
   const [shuffleEnabled, setShuffleEnabled] =
     useCoreSetting<boolean>('playback.shuffle');
@@ -48,6 +55,8 @@ export const ConnectedControls: FC = () => {
     setRepeatMode(modes[nextIndex]);
   };
 
+  const { enabled: isEqualizerActive } = useEqualizerStore();
+
   return (
     <PlayerBar.Controls
       isPlaying={status === 'playing'}
@@ -63,6 +72,8 @@ export const ConnectedControls: FC = () => {
         hasDiscoveryProviders ? handleToggleDiscovery : undefined
       }
       showDiscovery={hasDiscoveryProviders}
+      onEqualizerClick={onEqualizerClick}
+      isEqualizerActive={isEqualizerActive}
       labels={{
         shuffleOn: t('shuffleOn'),
         shuffleOff: t('shuffleOff'),

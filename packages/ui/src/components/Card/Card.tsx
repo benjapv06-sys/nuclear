@@ -29,7 +29,7 @@ export const Card: FC<CardProps> = ({
     data-testid="card"
     size="flexible"
     className={cn(
-      'group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1 focus-visible:-translate-y-1',
+      'group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 focus-visible:-translate-y-1.5',
       className,
     )}
     onClick={onClick}
@@ -45,7 +45,7 @@ export const Card: FC<CardProps> = ({
           src={src}
           alt={title}
           className="absolute inset-0"
-          imgClassName="h-full w-full object-cover transition-transform duration-300 ease-out group-hover/card:scale-105 group-focus-visible/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
+          imgClassName="h-full w-full object-cover transition-transform duration-500 [transition-timing-function:cubic-bezier(0.25,1,0.5,1)] group-hover/card:scale-110 group-focus-visible/card:scale-110 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
           placeholder={
             <CassetteTape
               size={96}
@@ -62,7 +62,7 @@ export const Card: FC<CardProps> = ({
         {title && (
           <div
             data-testid="card-title"
-            className="text-foreground truncate text-sm font-bold"
+            className="text-foreground group-hover/card:text-primary truncate text-sm font-bold transition-colors duration-300"
           >
             {title}
           </div>

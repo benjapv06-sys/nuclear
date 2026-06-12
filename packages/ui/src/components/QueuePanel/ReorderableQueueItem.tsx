@@ -14,6 +14,7 @@ export type ReorderableQueueItemProps = {
   isCurrent: boolean;
   isCollapsed?: boolean;
   isReorderable?: boolean;
+  isAnyDragging?: boolean;
   onSelect?: (id: string) => void;
   onRemove?: (id: string) => void;
   onSelectCandidate?: (itemId: string, candidateId: string) => void;
@@ -28,6 +29,7 @@ export const ReorderableQueueItem: FC<ReorderableQueueItemProps> = ({
   isCurrent,
   isCollapsed = false,
   isReorderable = false,
+  isAnyDragging = false,
   onSelect,
   onRemove,
   onSelectCandidate,
@@ -46,8 +48,8 @@ export const ReorderableQueueItem: FC<ReorderableQueueItemProps> = ({
   });
 
   const style = {
-    transform: CSS.Transform.toString(transform),
-    transition,
+    transform: CSS.Translate.toString(transform),
+    transition: isDragging ? 'none' : transition,
   };
 
   return (
@@ -55,8 +57,9 @@ export const ReorderableQueueItem: FC<ReorderableQueueItemProps> = ({
       ref={setNodeRef}
       style={style}
       className={cn({
-        'z-50': isDragging,
+        'pointer-events-none opacity-20': isDragging,
         'cursor-grab': isReorderable,
+        '[&_*]:transition-none [&_*]:duration-0': isAnyDragging,
       })}
       {...attributes}
       {...listeners}

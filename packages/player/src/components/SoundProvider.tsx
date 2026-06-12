@@ -1,17 +1,19 @@
 import type { FC, PropsWithChildren } from 'react';
 import { useCallback, useEffect } from 'react';
 
-import { Sound, Volume } from '@nuclearplayer/hifi';
+import { Equalizer, Sound, Volume } from '@nuclearplayer/hifi';
 
 import { useCoreSetting } from '../hooks/useCoreSetting';
 import { eventBus } from '../services/eventBus';
 import { Logger } from '../services/logger';
+import { useEqualizerStore } from '../stores/equalizerStore';
 import { useQueueStore } from '../stores/queueStore';
 import { useSoundStore } from '../stores/soundStore';
 import { resolveErrorMessage } from '../utils/logging';
 
 export const SoundProvider: FC<PropsWithChildren> = ({ children }) => {
   const { src, status, seek } = useSoundStore();
+  const { enabled: eqEnabled, data: eqData, preAmp } = useEqualizerStore();
   const [crossfadeMs] = useCoreSetting<number>('playback.crossfadeMs');
   const preload: HTMLAudioElement['preload'] = 'auto';
   const crossOrigin = '' as const;
@@ -79,6 +81,7 @@ export const SoundProvider: FC<PropsWithChildren> = ({ children }) => {
           onError={handleError}
         >
           <Volume value={volumePercent} />
+          {eqEnabled && <Equalizer data={eqData} preAmp={preAmp} />}
         </Sound>
       )}
       {children}

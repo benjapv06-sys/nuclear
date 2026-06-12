@@ -163,7 +163,8 @@ describe('Providers service', () => {
 
       providersHost.resolveActiveOnBootstrap();
 
-      expect(useProvidersStore.getState().active.metadata).toBe('real');
+      expect(providersHost.getActive('metadata')).toBe('real');
+      expect(useProvidersStore.getState().active.metadata).toBe('ghost');
     });
 
     it('keeps the persisted id when the matching provider is registered', () => {

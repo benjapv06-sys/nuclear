@@ -51,7 +51,7 @@ export const SidebarNavigationItem: FC<SidebarNavigationItemProps> = ({
             tabIndex={onClick ? 0 : undefined}
             data-testid="sidebar-navigation-item"
             className={cn(
-              'feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-[transform,box-shadow,background-color,border-color] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none',
+              'feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none',
               {
                 'cursor-pointer': onClick,
                 'bg-primary border-border shadow-shadow font-bold': active,
@@ -60,7 +60,7 @@ export const SidebarNavigationItem: FC<SidebarNavigationItemProps> = ({
               },
             )}
           >
-            <div className="flex size-8 shrink-0 items-center justify-center transition-transform duration-150 ease-out group-hover/sidebar-item:scale-105 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100">
+            <div className="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100">
               {icon}
             </div>
             <span

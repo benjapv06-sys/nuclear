@@ -7,6 +7,7 @@ import {
   Shuffle,
   SkipBack,
   SkipForward,
+  SlidersHorizontal,
 } from 'lucide-react';
 import { FC } from 'react';
 
@@ -48,6 +49,8 @@ type PlayerBarControlsProps = {
   onRepeatToggle: () => void;
   onDiscoveryToggle?: () => void;
   showDiscovery: boolean;
+  onEqualizerClick?: () => void;
+  isEqualizerActive?: boolean;
   className?: string;
 };
 
@@ -64,6 +67,8 @@ export const PlayerBarControls: FC<PlayerBarControlsProps> = ({
   onRepeatToggle,
   onDiscoveryToggle,
   showDiscovery,
+  onEqualizerClick,
+  isEqualizerActive = false,
   className = '',
 }) => (
   <div className={cn('flex items-center justify-center gap-2', className)}>
@@ -97,7 +102,10 @@ export const PlayerBarControls: FC<PlayerBarControlsProps> = ({
       size="icon"
       onClick={onPlayPause}
       data-testid={isPlaying ? 'player-pause-button' : 'player-play-button'}
-      className="group size-11 hover:scale-105 active:scale-95 motion-reduce:hover:scale-100 motion-reduce:active:scale-100"
+      className={cn(
+        'group size-11 hover:scale-105 active:scale-95 motion-reduce:hover:scale-100 motion-reduce:active:scale-100',
+        isPlaying && 'animate-pulse-play',
+      )}
     >
       {isPlaying ? (
         <Pause
@@ -132,6 +140,21 @@ export const PlayerBarControls: FC<PlayerBarControlsProps> = ({
         {repeatMode !== 'one' && <Repeat size={16} />}
       </Button>
     </Tooltip>
+    {onEqualizerClick && (
+      <Tooltip content="Ecualizador" side="top">
+        <Button
+          size="icon"
+          variant={isEqualizerActive ? 'default' : 'text'}
+          onClick={onEqualizerClick}
+          className={cn(
+            isEqualizerActive && 'scale-105',
+            isEqualizerActive && activeControlClass,
+          )}
+        >
+          <SlidersHorizontal size={16} />
+        </Button>
+      </Tooltip>
+    )}
     {showDiscovery && (
       <Tooltip
         content={isDiscoveryActive ? labels?.discoveryOn : labels?.discoveryOff}

@@ -74,13 +74,30 @@ export const Sound: React.FC<SoundProps> = ({
       return;
     }
 
-    if (PROTOCOLS_WITHOUT_WEB_AUDIO.has(src.protocol)) {
+    const hasPlugins = children
+      ? Children.toArray(children).filter(isValidElement).length > 0
+      : false;
+    if (hasPlugins) {
+      audio.volume = 1.0;
+    } else if (PROTOCOLS_WITHOUT_WEB_AUDIO.has(src.protocol)) {
       audio.volume = Math.max(0, Math.min(1, volume / 100));
     }
-  }, [volume, src.protocol]);
+  }, [volume, src.protocol, children]);
 
-  const handleRegisterPlugin = useCallback((node: AudioNode) => {
-    setAudioNodes((prev) => [...prev, node]);
+  const handleRegisterPlugin = useCallback((idx: number, node: AudioNode) => {
+    setAudioNodes((prev) => {
+      const next = [...prev];
+      next[idx + 1] = node;
+      return next;
+    });
+  }, []);
+
+  const handleUnregisterPlugin = useCallback((idx: number) => {
+    setAudioNodes((prev) => {
+      const next = [...prev];
+      next.splice(idx + 1, 1);
+      return next;
+    });
   }, []);
 
   const handleCanPlay = useCallback(() => {
@@ -120,7 +137,8 @@ export const Sound: React.FC<SoundProps> = ({
               key: idx,
               audioContext: context,
               previousNode: audioNodes[idx],
-              onRegister: handleRegisterPlugin,
+              onRegister: (node: AudioNode) => handleRegisterPlugin(idx, node),
+              onUnregister: () => handleUnregisterPlugin(idx),
             }),
           )}
           <Destination

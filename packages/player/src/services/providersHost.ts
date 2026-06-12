@@ -10,15 +10,6 @@ import type {
 import { useProvidersStore } from '../stores/providersStore';
 import { setupStreamingPairingSync } from './streamingPairingSync';
 
-const PROVIDER_KINDS: ProviderKind[] = [
-  'metadata',
-  'streaming',
-  'discovery',
-  'lyrics',
-  'dashboard',
-  'playlists',
-];
-
 const createProvidersHost = (): ProvidersHost => {
   const byKind = new Map<ProviderKind, Map<string, ProviderDescriptor>>();
   const byId = new Map<string, ProviderDescriptor>();
@@ -79,16 +70,6 @@ const createProvidersHost = (): ProvidersHost => {
         byKind.delete(current.kind);
       }
 
-      const store = useProvidersStore.getState();
-      if (store.getActive(current.kind) === providerId) {
-        const fallback = firstOfKind(current.kind);
-        if (fallback) {
-          store.setActive(current.kind, fallback.id);
-        } else {
-          store.clearActive(current.kind);
-        }
-      }
-
       notify();
       return true;
     },
@@ -129,7 +110,12 @@ const createProvidersHost = (): ProvidersHost => {
     },
 
     getActive(kind: ProviderKind) {
-      return useProvidersStore.getState().getActive(kind);
+      const preferredId = useProvidersStore.getState().getActive(kind);
+      if (preferredId && isRegistered(preferredId)) {
+        return preferredId;
+      }
+      const fallback = firstOfKind(kind);
+      return fallback?.id;
     },
 
     setActive(kind: ProviderKind, providerId: string) {
@@ -145,15 +131,6 @@ const createProvidersHost = (): ProvidersHost => {
 
     resolveActiveOnBootstrap() {
       const store = useProvidersStore.getState();
-
-      PROVIDER_KINDS.filter(
-        (kind) => !isRegistered(store.getActive(kind)),
-      ).forEach((kind) => {
-        const fallback = firstOfKind(kind);
-        if (fallback) {
-          store.setActive(kind, fallback.id);
-        }
-      });
 
       const pairedStreamingProviderId = pairedStreamingProviderIdFor(
         store.getActive('metadata'),

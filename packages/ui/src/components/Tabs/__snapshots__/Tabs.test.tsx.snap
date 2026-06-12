@@ -14,7 +14,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
       <button
         aria-controls="headlessui-tabs-panel-:r7:"
         aria-selected="true"
-        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2"
         data-headlessui-state=""
         data-selected=""
         id="headlessui-tabs-tab-:r1:"
@@ -27,7 +27,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
       <button
         aria-controls="headlessui-tabs-panel-:r9:"
         aria-selected="false"
-        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
+        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
         data-headlessui-state=""
         id="headlessui-tabs-tab-:r3:"
         role="tab"
@@ -39,7 +39,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
       <button
         aria-controls="headlessui-tabs-panel-:rb:"
         aria-selected="false"
-        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
+        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
         data-headlessui-state=""
         id="headlessui-tabs-tab-:r5:"
         role="tab"
@@ -77,7 +77,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                 role="grid"
               >
                 <button
-                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1 focus-visible:-translate-y-1"
+                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] cursor-pointer overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1.5 focus-visible:-translate-y-1.5 transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]"
                   data-headlessui-state=""
                   data-testid="card"
                   type="button"
@@ -90,7 +90,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                     >
                       <img
                         alt="Frank Zappa"
-                        class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover/card:scale-105 group-focus-visible/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
+                        class="h-full w-full object-cover transition-transform duration-500 [transition-timing-function:cubic-bezier(0.25,1,0.5,1)] group-hover/card:scale-110 group-focus-visible/card:scale-110 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
                         decoding="async"
                         loading="lazy"
                         src="https://picsum.photos/seed/Frank Zappa/300"
@@ -142,7 +142,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                     class="min-w-0"
                   >
                     <div
-                      class="text-foreground truncate text-sm font-bold"
+                      class="text-foreground group-hover/card:text-primary transition-colors duration-300 truncate text-sm font-bold"
                       data-testid="card-title"
                     >
                       Frank Zappa
@@ -150,7 +150,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                   </div>
                 </button>
                 <button
-                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1 focus-visible:-translate-y-1"
+                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] cursor-pointer overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1.5 focus-visible:-translate-y-1.5 transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]"
                   data-headlessui-state=""
                   data-testid="card"
                   type="button"
@@ -163,7 +163,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                     >
                       <img
                         alt="Ozzy Osbourne"
-                        class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover/card:scale-105 group-focus-visible/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
+                        class="h-full w-full object-cover transition-transform duration-500 [transition-timing-function:cubic-bezier(0.25,1,0.5,1)] group-hover/card:scale-110 group-focus-visible/card:scale-110 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
                         decoding="async"
                         loading="lazy"
                         src="https://picsum.photos/seed/Ozzy Osbourne/300"
@@ -215,7 +215,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                     class="min-w-0"
                   >
                     <div
-                      class="text-foreground truncate text-sm font-bold"
+                      class="text-foreground group-hover/card:text-primary transition-colors duration-300 truncate text-sm font-bold"
                       data-testid="card-title"
                     >
                       Ozzy Osbourne
@@ -223,7 +223,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                   </div>
                 </button>
                 <button
-                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1 focus-visible:-translate-y-1"
+                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] cursor-pointer overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1.5 focus-visible:-translate-y-1.5 transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]"
                   data-headlessui-state=""
                   data-testid="card"
                   type="button"
@@ -236,7 +236,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                     >
                       <img
                         alt="David Bowie"
-                        class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover/card:scale-105 group-focus-visible/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
+                        class="h-full w-full object-cover transition-transform duration-500 [transition-timing-function:cubic-bezier(0.25,1,0.5,1)] group-hover/card:scale-110 group-focus-visible/card:scale-110 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
                         decoding="async"
                         loading="lazy"
                         src="https://picsum.photos/seed/David Bowie/300"
@@ -288,7 +288,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                     class="min-w-0"
                   >
                     <div
-                      class="text-foreground truncate text-sm font-bold"
+                      class="text-foreground group-hover/card:text-primary transition-colors duration-300 truncate text-sm font-bold"
                       data-testid="card-title"
                     >
                       David Bowie
@@ -296,7 +296,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                   </div>
                 </button>
                 <button
-                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1 focus-visible:-translate-y-1"
+                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] cursor-pointer overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1.5 focus-visible:-translate-y-1.5 transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]"
                   data-headlessui-state=""
                   data-testid="card"
                   type="button"
@@ -309,7 +309,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                     >
                       <img
                         alt="Kurt Cobain"
-                        class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover/card:scale-105 group-focus-visible/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
+                        class="h-full w-full object-cover transition-transform duration-500 [transition-timing-function:cubic-bezier(0.25,1,0.5,1)] group-hover/card:scale-110 group-focus-visible/card:scale-110 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
                         decoding="async"
                         loading="lazy"
                         src="https://picsum.photos/seed/Kurt Cobain/300"
@@ -361,7 +361,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                     class="min-w-0"
                   >
                     <div
-                      class="text-foreground truncate text-sm font-bold"
+                      class="text-foreground group-hover/card:text-primary transition-colors duration-300 truncate text-sm font-bold"
                       data-testid="card-title"
                     >
                       Kurt Cobain
@@ -369,7 +369,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                   </div>
                 </button>
                 <button
-                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1 focus-visible:-translate-y-1"
+                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] cursor-pointer overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1.5 focus-visible:-translate-y-1.5 transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]"
                   data-headlessui-state=""
                   data-testid="card"
                   type="button"
@@ -382,7 +382,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                     >
                       <img
                         alt="John Lennon"
-                        class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover/card:scale-105 group-focus-visible/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
+                        class="h-full w-full object-cover transition-transform duration-500 [transition-timing-function:cubic-bezier(0.25,1,0.5,1)] group-hover/card:scale-110 group-focus-visible/card:scale-110 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
                         decoding="async"
                         loading="lazy"
                         src="https://picsum.photos/seed/John Lennon/300"
@@ -434,7 +434,7 @@ exports[`Tabs > (Snapshot) renders correctly 1`] = `
                     class="min-w-0"
                   >
                     <div
-                      class="text-foreground truncate text-sm font-bold"
+                      class="text-foreground group-hover/card:text-primary transition-colors duration-300 truncate text-sm font-bold"
                       data-testid="card-title"
                     >
                       John Lennon
@@ -481,7 +481,7 @@ exports[`Tabs > (Snapshot) renders in composition mode 1`] = `
       <button
         aria-controls="headlessui-tabs-panel-:rv:"
         aria-selected="true"
-        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2"
         data-headlessui-state=""
         data-selected=""
         id="headlessui-tabs-tab-:rr:"
@@ -494,7 +494,7 @@ exports[`Tabs > (Snapshot) renders in composition mode 1`] = `
       <button
         aria-controls="headlessui-tabs-panel-:r11:"
         aria-selected="false"
-        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
+        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
         data-headlessui-state=""
         id="headlessui-tabs-tab-:rt:"
         role="tab"
@@ -557,7 +557,7 @@ exports[`Tabs > (Snapshot) switches tabs 1`] = `
       <button
         aria-controls="headlessui-tabs-panel-:rk:"
         aria-selected="false"
-        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
+        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
         data-headlessui-state=""
         id="headlessui-tabs-tab-:re:"
         role="tab"
@@ -569,7 +569,7 @@ exports[`Tabs > (Snapshot) switches tabs 1`] = `
       <button
         aria-controls="headlessui-tabs-panel-:rm:"
         aria-selected="false"
-        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
+        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
         data-headlessui-state=""
         id="headlessui-tabs-tab-:rg:"
         role="tab"
@@ -581,7 +581,7 @@ exports[`Tabs > (Snapshot) switches tabs 1`] = `
       <button
         aria-controls="headlessui-tabs-panel-:ro:"
         aria-selected="true"
-        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+        class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2"
         data-headlessui-state="hover"
         data-hover=""
         data-selected=""

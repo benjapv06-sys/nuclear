@@ -4,6 +4,7 @@ export type InjectedProps<N extends AudioNode | AudioNode[]> = {
   audioContext: AudioContext;
   previousNode?: AudioNode;
   onRegister?: (node: N) => void;
+  onUnregister?: () => void;
 };
 
 export type Plugin<N extends AudioNode | AudioNode[], P> = {
@@ -44,10 +45,34 @@ export function pluginFactory<P, N extends AudioNode | AudioNode[]>(
         }
       }
       return () => {
+        if (previousNode) {
+          try {
+            if (Array.isArray(node)) {
+              previousNode.disconnect(node[0]);
+            } else {
+              previousNode.disconnect(node);
+            }
+          } catch {
+            // Ignorar errores si no estaba conectado o el nodo ya no existe
+          }
+        }
         if (Array.isArray(node)) {
-          node.forEach((n) => n.disconnect());
+          node.forEach((n) => {
+            try {
+              n.disconnect();
+            } catch {
+              // Ignorar errores de desconexión
+            }
+          });
         } else {
-          node.disconnect();
+          try {
+            node.disconnect();
+          } catch {
+            // Ignorar errores de desconexión
+          }
+        }
+        if (injected.onUnregister) {
+          injected.onUnregister();
         }
       };
     }, [audioContext, previousNode]);

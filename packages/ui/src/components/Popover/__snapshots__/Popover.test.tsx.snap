@@ -19,7 +19,7 @@ exports[`Popover > (Snapshot) renders menu with items 1`] = `
         id="headlessui-popover-button-:rf:"
       >
         <button
-          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2"
           data-headlessui-state="hover"
           data-hover=""
           type="button"
@@ -50,45 +50,56 @@ exports[`Popover > (Snapshot) renders menu with items 1`] = `
         type="button"
       />
       <div
-        animate="[object Object]"
-        class="text-foreground bg-primary border-border rounded-md border-(length:--border-width) px-4 py-2 leading-5 select-none translate-y-0"
-        exit="[object Object]"
-        initial="[object Object]"
-        style="overflow: auto; max-width: -16px; max-height: min(var(--anchor-max-height, 100vh), 0px);"
+        class="text-foreground bg-primary border-border rounded-md border-(length:--border-width) leading-5 select-none p-0 overflow-hidden translate-y-0"
+        data-anchor="bottom center"
+        data-floating-ui-focusable=""
+        data-headlessui-state="open"
+        data-open=""
+        id="headlessui-popover-panel-:rh:"
+        style="position: absolute; left: 0px; top: 0px; --button-width: 0px; overflow: auto; max-width: -16px; max-height: min(var(--anchor-max-height, 100vh), 0px);"
+        tabindex="-1"
       >
         <div
-          class="flex min-w-48 flex-col overflow-hidden"
+          animate="[object Object]"
+          class="px-4 py-2"
+          exit="[object Object]"
+          initial="[object Object]"
+          transition="[object Object]"
         >
-          <button
-            class="hover:bg-background-secondary hover:border-border flex w-full cursor-pointer items-center gap-3 border-t border-transparent px-3 py-2 text-left text-sm outline-none not-last:border-b first:border-t-0 last:border-b-0"
+          <div
+            class="flex min-w-48 flex-col overflow-hidden"
           >
-            <span
-              class="w-4 shrink-0"
-            />
-            <span>
-              Action One
-            </span>
-          </button>
-          <button
-            class="hover:bg-background-secondary hover:border-border flex w-full cursor-pointer items-center gap-3 border-t border-transparent px-3 py-2 text-left text-sm outline-none not-last:border-b first:border-t-0 last:border-b-0"
-          >
-            <span
-              class="w-4 shrink-0"
-            />
-            <span>
-              Action Two
-            </span>
-          </button>
-          <button
-            class="hover:bg-background-secondary hover:border-border flex w-full cursor-pointer items-center gap-3 border-t border-transparent px-3 py-2 text-left text-sm outline-none not-last:border-b first:border-t-0 last:border-b-0 text-accent-red"
-          >
-            <span
-              class="w-4 shrink-0"
-            />
-            <span>
-              Delete
-            </span>
-          </button>
+            <button
+              class="hover:bg-background-secondary hover:border-border flex w-full cursor-pointer items-center gap-3 border-t border-transparent px-3 py-2 text-left text-sm outline-none not-last:border-b first:border-t-0 last:border-b-0"
+            >
+              <span
+                class="w-4 shrink-0"
+              />
+              <span>
+                Action One
+              </span>
+            </button>
+            <button
+              class="hover:bg-background-secondary hover:border-border flex w-full cursor-pointer items-center gap-3 border-t border-transparent px-3 py-2 text-left text-sm outline-none not-last:border-b first:border-t-0 last:border-b-0"
+            >
+              <span
+                class="w-4 shrink-0"
+              />
+              <span>
+                Action Two
+              </span>
+            </button>
+            <button
+              class="hover:bg-background-secondary hover:border-border flex w-full cursor-pointer items-center gap-3 border-t border-transparent px-3 py-2 text-left text-sm outline-none not-last:border-b first:border-t-0 last:border-b-0 text-accent-red"
+            >
+              <span
+                class="w-4 shrink-0"
+              />
+              <span>
+                Delete
+              </span>
+            </button>
+          </div>
         </div>
       </div>
       <button
@@ -122,7 +133,7 @@ exports[`Popover > (Snapshot) renders with all props 1`] = `
         id="headlessui-popover-button-:r2:"
       >
         <button
-          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2"
           data-headlessui-state="hover"
           data-hover=""
           type="button"
@@ -153,13 +164,24 @@ exports[`Popover > (Snapshot) renders with all props 1`] = `
         type="button"
       />
       <div
-        animate="[object Object]"
-        class="text-foreground bg-primary border-border rounded-md border-(length:--border-width) px-4 py-2 leading-5 select-none translate-x-2 -translate-y-2"
-        exit="[object Object]"
-        initial="[object Object]"
-        style="overflow: auto; max-width: -16px; max-height: min(var(--anchor-max-height, 100vh), 0px);"
+        class="text-foreground bg-primary border-border rounded-md border-(length:--border-width) leading-5 select-none p-0 overflow-hidden translate-x-2 -translate-y-2"
+        data-anchor="left center"
+        data-floating-ui-focusable=""
+        data-headlessui-state="open"
+        data-open=""
+        id="headlessui-popover-panel-:r4:"
+        style="position: absolute; left: 0px; top: 0px; --button-width: 0px; overflow: auto; max-width: -16px; max-height: min(var(--anchor-max-height, 100vh), 0px);"
+        tabindex="-1"
       >
-        Popover Content
+        <div
+          animate="[object Object]"
+          class="px-4 py-2"
+          exit="[object Object]"
+          initial="[object Object]"
+          transition="[object Object]"
+        >
+          Popover Content
+        </div>
       </div>
       <button
         aria-hidden="true"
@@ -192,7 +214,7 @@ exports[`Popover > (Snapshot) renders with backdrop 1`] = `
         id="headlessui-popover-button-:r8:"
       >
         <button
-          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2"
           data-headlessui-state="hover"
           data-hover=""
           type="button"
@@ -223,12 +245,22 @@ exports[`Popover > (Snapshot) renders with backdrop 1`] = `
         type="button"
       />
       <div
-        animate="[object Object]"
-        class="text-foreground bg-primary border-border rounded-md border-(length:--border-width) px-4 py-2 leading-5 select-none"
-        exit="[object Object]"
-        initial="[object Object]"
+        class="text-foreground bg-primary border-border rounded-md border-(length:--border-width) leading-5 select-none p-0 overflow-hidden"
+        data-headlessui-state="open"
+        data-open=""
+        id="headlessui-popover-panel-:rb:"
+        style="--button-width: 0px;"
+        tabindex="-1"
       >
-        Popover Content
+        <div
+          animate="[object Object]"
+          class="px-4 py-2"
+          exit="[object Object]"
+          initial="[object Object]"
+          transition="[object Object]"
+        >
+          Popover Content
+        </div>
       </div>
       <button
         aria-hidden="true"

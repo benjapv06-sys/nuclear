@@ -32,8 +32,8 @@ export function SortableRow<T extends Track = Track>({
   });
 
   const style = {
-    transform: CSS.Transform.toString(transform),
-    transition,
+    transform: CSS.Translate.toString(transform),
+    transition: isDragging ? 'none' : transition,
     ...externalStyle,
   };
 
@@ -46,7 +46,7 @@ export function SortableRow<T extends Track = Track>({
         'border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none',
         {
           'hover:-translate-y-px': !isDragging,
-          'bg-primary shadow-shadow z-50 scale-[1.01]': isDragging,
+          'bg-primary shadow-shadow z-50 scale-[1.01] opacity-60': isDragging,
           'cursor-grab': isReorderable,
         },
       )}
