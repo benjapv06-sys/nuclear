@@ -3,35 +3,31 @@
 exports[`PlayerBarSeekBar > (Snapshot) default render 1`] = `
 <DocumentFragment>
   <div
-    class="flex w-full flex-col gap-1 select-none"
+    class="flex w-full flex-row items-center gap-3 select-none"
   >
+    <span
+      class="text-foreground-secondary text-[11px] font-medium tabular-nums min-w-[38px] text-right"
+    >
+      1:37
+    </span>
     <div
       aria-disabled="false"
-      class="group/seek relative flex h-6 w-full items-center outline-none"
+      class="group/seek relative flex h-6 flex-1 items-center outline-none"
     >
       <div
-        class="border-border bg-background-secondary relative h-1 w-full rounded-full border-(length:--border-width) transition-[height,filter,box-shadow] duration-200 ease-out group-hover/seek:h-1.5 group-hover/seek:brightness-105 motion-reduce:transition-none"
+        class="bg-white/15 relative h-1 w-full rounded-full transition-[height,filter,box-shadow] duration-200 ease-out group-hover/seek:h-1.5 motion-reduce:transition-none"
       >
         <div
-          class="bg-primary h-full rounded-full transition-[width,filter] duration-300 ease-out group-hover/seek:brightness-110 motion-reduce:transition-none"
+          class="bg-white h-full rounded-full transition-[width,background-color] duration-150 ease-out group-hover/seek:bg-primary motion-reduce:transition-none"
           style="width: 25%;"
         />
       </div>
     </div>
-    <div
-      class="text-foreground-secondary -mt-0.5 flex w-full flex-row justify-between px-4 pb-0.5 text-[10px] leading-none font-bold tracking-wide select-none"
+    <span
+      class="text-foreground-secondary text-[11px] font-medium tabular-nums min-w-[38px] text-left"
     >
-      <span
-        class="tabular-nums"
-      >
-        1:37
-      </span>
-      <span
-        class="tabular-nums"
-      >
-        -21:37
-      </span>
-    </div>
+      -21:37
+    </span>
   </div>
 </DocumentFragment>
 `;

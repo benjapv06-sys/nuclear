@@ -30,11 +30,19 @@ export const PlayerBarSeekBar: FC<PlayerSeekBarProps> = ({
   });
 
   return (
-    <div className={cn('flex w-full flex-col gap-1 select-none', className)}>
+    <div
+      className={cn(
+        'flex w-full flex-row items-center gap-3 select-none',
+        className,
+      )}
+    >
+      <span className="text-foreground-secondary min-w-[38px] text-right text-[11px] font-medium tabular-nums">
+        {formatTimeSeconds(elapsedSeconds)}
+      </span>
       <div
         ref={containerRef}
         className={cn(
-          'group/seek relative flex h-6 w-full items-center outline-none',
+          'group/seek relative flex h-6 flex-1 items-center outline-none',
           {
             'pointer-events-none cursor-not-allowed': isLoading,
             'cursor-pointer': isInteractive,
@@ -45,7 +53,7 @@ export const PlayerBarSeekBar: FC<PlayerSeekBarProps> = ({
       >
         <div
           className={cn(
-            'border-border bg-background-secondary relative h-1 w-full rounded-full border-(length:--border-width) transition-[height,filter,box-shadow] duration-200 ease-out group-hover/seek:h-1.5 group-hover/seek:brightness-105 motion-reduce:transition-none',
+            'relative h-1 w-full rounded-full bg-white/15 transition-[height,filter,box-shadow] duration-200 ease-out group-hover/seek:h-1.5 motion-reduce:transition-none',
             {
               'overflow-hidden': isLoading,
             },
@@ -57,7 +65,7 @@ export const PlayerBarSeekBar: FC<PlayerSeekBarProps> = ({
           {!isLoading && (
             <div
               className={cn(
-                'bg-primary h-full rounded-full transition-[width,filter] duration-300 ease-out group-hover/seek:brightness-110 motion-reduce:transition-none',
+                'group-hover/seek:bg-primary h-full rounded-full bg-white transition-[width,background-color] duration-150 ease-out motion-reduce:transition-none',
               )}
               style={{ width: `${clamped}%` }}
             />
@@ -65,19 +73,14 @@ export const PlayerBarSeekBar: FC<PlayerSeekBarProps> = ({
         </div>
         {isInteractive && !isLoading && (
           <div
-            className="border-border bg-primary shadow-shadow pointer-events-none absolute top-1/2 z-20 size-3 -translate-x-1/2 -translate-y-1/2 scale-75 rounded-full border-(length:--border-width) opacity-0 transition-[opacity,transform,left] duration-300 ease-out group-hover/seek:scale-110 group-hover/seek:opacity-100 motion-reduce:transition-none motion-reduce:group-hover/seek:scale-100"
+            className="pointer-events-none absolute top-1/2 z-20 size-3 -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full bg-white opacity-0 shadow-md transition-[opacity,transform,left] duration-150 ease-out group-hover/seek:scale-100 group-hover/seek:opacity-100 motion-reduce:transition-none"
             style={{ left: `${clamped}%` }}
           />
         )}
       </div>
-      <div className="text-foreground-secondary -mt-0.5 flex w-full flex-row justify-between px-4 pb-0.5 text-[10px] leading-none font-bold tracking-wide select-none">
-        <span className="tabular-nums">
-          {formatTimeSeconds(elapsedSeconds)}
-        </span>
-        <span className="tabular-nums">
-          {formatTimeSeconds(-Math.abs(remainingSeconds))}
-        </span>
-      </div>
+      <span className="text-foreground-secondary min-w-[38px] text-left text-[11px] font-medium tabular-nums">
+        {formatTimeSeconds(-Math.abs(remainingSeconds))}
+      </span>
     </div>
   );
 };
