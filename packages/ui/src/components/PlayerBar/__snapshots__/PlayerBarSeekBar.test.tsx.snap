@@ -6,7 +6,7 @@ exports[`PlayerBarSeekBar > (Snapshot) default render 1`] = `
     class="flex w-full flex-row items-center gap-3 select-none"
   >
     <span
-      class="text-foreground-secondary text-[11px] font-medium tabular-nums min-w-[38px] text-right"
+      class="text-foreground-secondary min-w-[38px] text-right text-[11px] font-medium tabular-nums"
     >
       1:37
     </span>
@@ -15,16 +15,16 @@ exports[`PlayerBarSeekBar > (Snapshot) default render 1`] = `
       class="group/seek relative flex h-6 flex-1 items-center outline-none"
     >
       <div
-        class="bg-white/15 relative h-1 w-full rounded-full transition-[height,filter,box-shadow] duration-200 ease-out group-hover/seek:h-1.5 motion-reduce:transition-none"
+        class="relative h-1 w-full rounded-full bg-white/15 transition-[height,filter,box-shadow] duration-200 ease-out group-hover/seek:h-1.5 motion-reduce:transition-none"
       >
         <div
-          class="bg-white h-full rounded-full transition-[width,background-color] duration-150 ease-out group-hover/seek:bg-primary motion-reduce:transition-none"
+          class="group-hover/seek:bg-primary h-full rounded-full bg-white motion-reduce:transition-none transition-[width,background-color] duration-300 ease-linear"
           style="width: 25%;"
         />
       </div>
     </div>
     <span
-      class="text-foreground-secondary text-[11px] font-medium tabular-nums min-w-[38px] text-left"
+      class="text-foreground-secondary min-w-[38px] text-left text-[11px] font-medium tabular-nums"
     >
       -21:37
     </span>

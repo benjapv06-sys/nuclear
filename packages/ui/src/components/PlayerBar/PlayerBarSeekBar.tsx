@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect, useRef } from 'react';
 
 import '../../styles.css';
 
@@ -28,6 +28,22 @@ export const PlayerBarSeekBar: FC<PlayerSeekBarProps> = ({
     isLoading,
     onSeek,
   });
+
+  const prevClamped = useRef(clamped);
+  const diff = Math.abs(clamped - prevClamped.current);
+  const isSeek = diff > 1.5;
+
+  useEffect(() => {
+    prevClamped.current = clamped;
+  }, [clamped]);
+
+  const barTransitionClass = isSeek
+    ? 'transition-[width,background-color] duration-200 ease-out'
+    : 'transition-[width,background-color] duration-300 ease-linear';
+
+  const thumbTransitionClass = isSeek
+    ? 'transition-[opacity,transform,left] duration-200 ease-out'
+    : 'transition-[opacity,transform,left] duration-300 ease-linear';
 
   return (
     <div
@@ -65,7 +81,8 @@ export const PlayerBarSeekBar: FC<PlayerSeekBarProps> = ({
           {!isLoading && (
             <div
               className={cn(
-                'group-hover/seek:bg-primary h-full rounded-full bg-white transition-[width,background-color] duration-150 ease-out motion-reduce:transition-none',
+                'group-hover/seek:bg-primary h-full rounded-full bg-white motion-reduce:transition-none',
+                barTransitionClass,
               )}
               style={{ width: `${clamped}%` }}
             />
@@ -73,7 +90,10 @@ export const PlayerBarSeekBar: FC<PlayerSeekBarProps> = ({
         </div>
         {isInteractive && !isLoading && (
           <div
-            className="pointer-events-none absolute top-1/2 z-20 size-3 -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full bg-white opacity-0 shadow-md transition-[opacity,transform,left] duration-150 ease-out group-hover/seek:scale-100 group-hover/seek:opacity-100 motion-reduce:transition-none"
+            className={cn(
+              'pointer-events-none absolute top-1/2 z-20 size-3 -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full bg-white opacity-0 shadow-md group-hover/seek:scale-100 group-hover/seek:opacity-100 motion-reduce:transition-none',
+              thumbTransitionClass,
+            )}
             style={{ left: `${clamped}%` }}
           />
         )}
