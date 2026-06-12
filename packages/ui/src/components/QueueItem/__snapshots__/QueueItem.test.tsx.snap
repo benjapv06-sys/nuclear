@@ -9,7 +9,7 @@ exports[`QueueItem > (Snapshot) renders collapsed state 1`] = `
     class="pointer-events-none absolute -top-0.5 -left-0.5 h-10 w-10 rounded-md opacity-80 transition-[opacity,transform,background-color] duration-150 ease-out motion-reduce:transition-none"
   />
   <div
-    class="border-border text-foreground rounded-md border-(length:--border-width) bg-background-secondary shadow-none feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none h-9 w-9 justify-center p-0"
+    class="border-border text-foreground rounded-md border-(length:--border-width) bg-background-secondary shadow-none feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none h-9 w-9 justify-center p-0"
     role="button"
     tabindex="0"
   >
@@ -31,7 +31,7 @@ exports[`QueueItem > (Snapshot) renders collapsed state without onSelect 1`] = `
     class="pointer-events-none absolute -top-0.5 -left-0.5 h-10 w-10 rounded-md opacity-80 transition-[opacity,transform,background-color] duration-150 ease-out motion-reduce:transition-none"
   />
   <div
-    class="border-border text-foreground rounded-md border-(length:--border-width) bg-background-secondary shadow-none feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none h-9 w-9 justify-center p-0"
+    class="border-border text-foreground rounded-md border-(length:--border-width) bg-background-secondary shadow-none feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none h-9 w-9 justify-center p-0"
   >
     <img
       alt="Bohemian Rhapsody"
@@ -44,7 +44,7 @@ exports[`QueueItem > (Snapshot) renders collapsed state without onSelect 1`] = `
 
 exports[`QueueItem > (Snapshot) renders current state 1`] = `
 <div
-  class="border-border text-foreground h-full rounded-md border-(length:--border-width) shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none bg-primary shadow-shadow w-full p-0"
+  class="border-border text-foreground h-full rounded-md border-(length:--border-width) shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none bg-primary shadow-shadow w-full p-0"
   data-is-current="true"
   data-testid="queue-item"
   role="button"
@@ -90,7 +90,7 @@ exports[`QueueItem > (Snapshot) renders current state 1`] = `
     </div>
     <button
       aria-label="Remove from queue"
-      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 hover:brightness-105 active:brightness-95 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
+      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 hover:brightness-105 active:brightness-95 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
       data-headlessui-state=""
       data-testid="queue-item-remove-button"
       type="button"
@@ -122,7 +122,7 @@ exports[`QueueItem > (Snapshot) renders current state 1`] = `
 
 exports[`QueueItem > (Snapshot) renders default state 1`] = `
 <div
-  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none w-full p-0"
+  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none w-full p-0"
   data-is-current="false"
   data-testid="queue-item"
   role="button"
@@ -165,7 +165,7 @@ exports[`QueueItem > (Snapshot) renders default state 1`] = `
     </div>
     <button
       aria-label="Remove from queue"
-      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 hover:brightness-105 active:brightness-95 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
+      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 hover:brightness-105 active:brightness-95 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
       data-headlessui-state=""
       data-testid="queue-item-remove-button"
       type="button"
@@ -197,7 +197,7 @@ exports[`QueueItem > (Snapshot) renders default state 1`] = `
 
 exports[`QueueItem > (Snapshot) renders error state 1`] = `
 <div
-  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none w-full p-0"
+  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none w-full p-0"
   data-is-current="false"
   data-testid="queue-item"
   role="button"
@@ -284,7 +284,7 @@ exports[`QueueItem > (Snapshot) renders error state 1`] = `
     </div>
     <button
       aria-label="Remove from queue"
-      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 hover:brightness-105 active:brightness-95 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
+      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 hover:brightness-105 active:brightness-95 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
       data-headlessui-state=""
       data-testid="queue-item-remove-button"
       type="button"
@@ -316,7 +316,7 @@ exports[`QueueItem > (Snapshot) renders error state 1`] = `
 
 exports[`QueueItem > (Snapshot) renders loading state 1`] = `
 <div
-  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none opacity-70 w-full p-0"
+  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none opacity-70 w-full p-0"
   data-is-current="false"
   data-testid="queue-item"
   role="button"
@@ -359,7 +359,7 @@ exports[`QueueItem > (Snapshot) renders loading state 1`] = `
     </div>
     <button
       aria-label="Remove from queue"
-      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 hover:brightness-105 active:brightness-95 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
+      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 hover:brightness-105 active:brightness-95 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
       data-headlessui-state=""
       data-testid="queue-item-remove-button"
       type="button"
@@ -394,7 +394,7 @@ exports[`QueueItem > (Snapshot) renders loading state 1`] = `
 
 exports[`QueueItem > renders without callbacks 1`] = `
 <div
-  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none w-full p-0"
+  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none w-full p-0"
   data-is-current="false"
   data-testid="queue-item"
 >

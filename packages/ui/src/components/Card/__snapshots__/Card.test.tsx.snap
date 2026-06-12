@@ -3,7 +3,7 @@
 exports[`Card > (Snapshot) renders correctly 1`] = `
 <div>
   <button
-    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y active:scale-[0.98] cursor-pointer overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1.5 focus-visible:-translate-y-1.5 transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]"
+    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 focus-visible:-translate-y-1.5"
     data-headlessui-state=""
     data-testid="card"
     type="button"
@@ -68,7 +68,7 @@ exports[`Card > (Snapshot) renders correctly 1`] = `
       class="min-w-0"
     >
       <div
-        class="text-foreground group-hover/card:text-primary transition-colors duration-300 truncate text-sm font-bold"
+        class="text-foreground group-hover/card:text-primary truncate text-sm font-bold transition-colors duration-300"
         data-testid="card-title"
       >
         Test album

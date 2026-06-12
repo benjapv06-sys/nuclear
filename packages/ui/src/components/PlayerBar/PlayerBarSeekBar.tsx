@@ -34,7 +34,7 @@ export const PlayerBarSeekBar: FC<PlayerSeekBarProps> = ({
       <div
         ref={containerRef}
         className={cn(
-          'group/seek relative flex h-3 w-full items-center outline-none',
+          'group/seek relative flex h-6 w-full items-center outline-none',
           {
             'pointer-events-none cursor-not-allowed': isLoading,
             'cursor-pointer': isInteractive,
@@ -65,7 +65,7 @@ export const PlayerBarSeekBar: FC<PlayerSeekBarProps> = ({
         </div>
         {isInteractive && !isLoading && (
           <div
-            className="border-border bg-primary shadow-shadow pointer-events-none absolute top-1/2 z-20 size-3 -translate-x-1/2 -translate-y-1/2 scale-75 rounded-full border-(length:--border-width) opacity-0 transition-[opacity,transform] duration-200 ease-out group-hover/seek:scale-110 group-hover/seek:opacity-100 motion-reduce:transition-none motion-reduce:group-hover/seek:scale-100"
+            className="border-border bg-primary shadow-shadow pointer-events-none absolute top-1/2 z-20 size-3 -translate-x-1/2 -translate-y-1/2 scale-75 rounded-full border-(length:--border-width) opacity-0 transition-[opacity,transform,left] duration-300 ease-out group-hover/seek:scale-110 group-hover/seek:opacity-100 motion-reduce:transition-none motion-reduce:group-hover/seek:scale-100"
             style={{ left: `${clamped}%` }}
           />
         )}
