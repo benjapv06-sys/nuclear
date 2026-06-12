@@ -37,14 +37,26 @@ export const QueueItemExpanded: FC<QueueItemProps> = ({
       onClick={onSelect}
       onDoubleClick={onSelect}
       role={onSelect ? 'button' : undefined}
+      tabIndex={onSelect ? 0 : undefined}
+      onKeyDown={(event) => {
+        if (!onSelect || (event.key !== 'Enter' && event.key !== ' ')) {
+          return;
+        }
+
+        event.preventDefault();
+        onSelect();
+      }}
     >
       {status === 'error' && (
         <div className="bg-accent-red absolute top-0 right-0 bottom-0 left-0 w-2 border-0" />
       )}
+      {isCurrent && status !== 'error' && (
+        <div className="bg-foreground/30 absolute top-2 bottom-2 left-0 w-1 rounded-r-full transition-[opacity,transform] duration-150 group-hover:scale-y-110 motion-reduce:transition-none" />
+      )}
       <div
         data-testid="queue-item-thumbnail"
         className={cn(
-          'bg-background flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-sm',
+          'bg-background border-border/60 group-hover:shadow-shadow flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-sm border transition-[box-shadow,transform] duration-150 ease-out group-hover:-translate-y-px motion-reduce:transition-none motion-reduce:group-hover:translate-y-0',
           classes?.thumbnail,
         )}
       >
@@ -52,7 +64,7 @@ export const QueueItemExpanded: FC<QueueItemProps> = ({
           <img
             src={thumbnail.url}
             alt={track.title}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover transition-transform duration-200 ease-out group-hover:scale-105 group-focus-visible:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100 motion-reduce:group-focus-visible:scale-100"
           />
         ) : (
           <Music
@@ -67,7 +79,7 @@ export const QueueItemExpanded: FC<QueueItemProps> = ({
         <div
           data-testid="queue-item-title"
           className={cn(
-            'text-foreground truncate text-sm font-bold',
+            'text-foreground group-hover:text-primary truncate text-sm font-bold transition-colors duration-150 motion-reduce:transition-none',
             classes?.title,
           )}
         >
@@ -98,7 +110,7 @@ export const QueueItemExpanded: FC<QueueItemProps> = ({
           <div
             data-testid="queue-item-duration"
             className={cn(
-              'text-foreground mr-4 text-sm tabular-nums',
+              'text-foreground mr-4 text-sm tabular-nums transition-[opacity,transform] duration-150 group-focus-within:-translate-x-1 group-focus-within:opacity-70 group-hover:-translate-x-1 group-hover:opacity-70 motion-reduce:transition-none',
               classes?.duration,
             )}
           >
@@ -119,7 +131,7 @@ export const QueueItemExpanded: FC<QueueItemProps> = ({
             onPointerDown={(e) => e.stopPropagation()}
             aria-label={labels?.removeButton}
             className={cn(
-              'absolute right-4 opacity-0 group-hover:opacity-100',
+              'absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none',
               classes?.removeButton,
             )}
           >

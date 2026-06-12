@@ -23,7 +23,7 @@ const AddToQueueButton: FC<AddToQueueButtonProps> = ({ onClick }) => (
     data-testid="add-to-queue-button"
     size="icon-sm"
     variant="text"
-    className="opacity-0 transition-none group-hover:opacity-100"
+    className="translate-x-1 opacity-0 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:translate-x-0 group-focus-within/track-row:opacity-100 group-hover/track-row:translate-x-0 group-hover/track-row:opacity-100 motion-reduce:transition-none"
     onClick={(e) => {
       e.stopPropagation();
       onClick();
@@ -43,7 +43,7 @@ const ContextMenuButton = forwardRef<HTMLElement>(
         data-testid="track-context-menu-button"
         size="icon-sm"
         variant="text"
-        className="opacity-0 transition-none group-hover:opacity-100"
+        className="translate-x-1 opacity-0 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:translate-x-0 group-focus-within/track-row:opacity-100 group-hover/track-row:translate-x-0 group-hover/track-row:opacity-100 motion-reduce:transition-none"
         onClick={(e) => e.stopPropagation()}
         aria-label="Track options"
       >
@@ -71,7 +71,7 @@ export const TitleCell = <T extends Track>({
     <td className="truncate px-2">
       <div className="flex items-center justify-between gap-2">
         <button
-          className="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+          className="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
           onClick={(e) => {
             e.stopPropagation();
             actions.onPlayNow?.(track);

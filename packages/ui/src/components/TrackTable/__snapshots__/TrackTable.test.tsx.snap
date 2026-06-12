@@ -9,16 +9,16 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
       class="flex items-center gap-2 mb-2 shrink-0"
     >
       <div
-        class="ml-auto inline-flex w-full max-w-sm items-stretch"
+        class="ml-auto inline-flex w-full max-w-sm items-stretch transition-[filter,transform] duration-150 ease-out motion-reduce:transition-none"
       >
         <div
           class="flex w-full flex-col gap-2"
         >
           <div
-            class="border-border inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2"
+            class="border-border hover:border-foreground/60 inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) transition-[border-color,box-shadow] duration-150 ease-out has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2 motion-reduce:transition-none"
           >
             <input
-              class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-black focus-visible:outline-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+              class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-black focus-visible:outline-none motion-reduce:transition-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
               data-headlessui-state=""
               id="input-:r0:"
               placeholder="Filter tracks"
@@ -200,7 +200,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -217,17 +217,25 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -239,7 +247,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 1
                   </button>
@@ -249,7 +257,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -258,7 +266,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:30
                 </div>
@@ -268,7 +276,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -285,17 +293,25 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -307,7 +323,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 2
                   </button>
@@ -317,7 +333,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -326,7 +342,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:31
                 </div>
@@ -336,7 +352,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -353,17 +369,25 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -375,7 +399,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 3
                   </button>
@@ -385,7 +409,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -394,7 +418,7 @@ exports[`TrackTable > (Snapshot) Basic 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:32
                 </div>
@@ -417,16 +441,16 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
       class="flex items-center gap-2 mb-2 shrink-0"
     >
       <div
-        class="ml-auto inline-flex w-full max-w-sm items-stretch"
+        class="ml-auto inline-flex w-full max-w-sm items-stretch transition-[filter,transform] duration-150 ease-out motion-reduce:transition-none"
       >
         <div
           class="flex w-full flex-col gap-2"
         >
           <div
-            class="border-border inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2"
+            class="border-border hover:border-foreground/60 inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) transition-[border-color,box-shadow] duration-150 ease-out has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2 motion-reduce:transition-none"
           >
             <input
-              class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-black focus-visible:outline-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+              class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-black focus-visible:outline-none motion-reduce:transition-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
               data-headlessui-state=""
               id="input-:r2:"
               placeholder="Filter tracks"
@@ -608,7 +632,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
               aria-describedby="DndDescribedBy-0"
               aria-disabled="false"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none cursor-grab"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px cursor-grab"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -625,17 +649,25 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -647,7 +679,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 1
                   </button>
@@ -657,7 +689,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -666,7 +698,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:30
                 </div>
@@ -676,7 +708,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
               aria-describedby="DndDescribedBy-0"
               aria-disabled="false"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none cursor-grab"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px cursor-grab"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -693,17 +725,25 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -715,7 +755,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 2
                   </button>
@@ -725,7 +765,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -734,7 +774,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:31
                 </div>
@@ -744,7 +784,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
               aria-describedby="DndDescribedBy-0"
               aria-disabled="false"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none cursor-grab"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px cursor-grab"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -761,17 +801,25 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -783,7 +831,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 3
                   </button>
@@ -793,7 +841,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -802,7 +850,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:32
                 </div>
@@ -812,7 +860,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
               aria-describedby="DndDescribedBy-0"
               aria-disabled="false"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none cursor-grab"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px cursor-grab"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -829,17 +877,25 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -851,7 +907,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 4
                   </button>
@@ -861,7 +917,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -870,7 +926,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:33
                 </div>
@@ -880,7 +936,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
               aria-describedby="DndDescribedBy-0"
               aria-disabled="false"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none cursor-grab"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px cursor-grab"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -897,17 +953,25 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -919,7 +983,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 5
                   </button>
@@ -929,7 +993,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -938,7 +1002,7 @@ exports[`TrackTable > (Snapshot) DragAndDrop 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:34
                 </div>
@@ -978,16 +1042,16 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
       class="flex items-center gap-2 mb-2 shrink-0"
     >
       <div
-        class="ml-auto inline-flex w-full max-w-sm items-stretch"
+        class="ml-auto inline-flex w-full max-w-sm items-stretch transition-[filter,transform] duration-150 ease-out motion-reduce:transition-none"
       >
         <div
           class="flex w-full flex-col gap-2"
         >
           <div
-            class="border-border inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2"
+            class="border-border hover:border-foreground/60 inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) transition-[border-color,box-shadow] duration-150 ease-out has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2 motion-reduce:transition-none"
           >
             <input
-              class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-black focus-visible:outline-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+              class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-black focus-visible:outline-none motion-reduce:transition-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
               data-headlessui-state=""
               id="input-:r4:"
               placeholder="Filter tracks"
@@ -1169,7 +1233,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -1186,17 +1250,25 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -1208,7 +1280,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 1
                   </button>
@@ -1218,7 +1290,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -1227,7 +1299,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:30
                 </div>
@@ -1237,7 +1309,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -1254,17 +1326,25 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -1276,7 +1356,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 2
                   </button>
@@ -1286,7 +1366,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -1295,7 +1375,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:31
                 </div>
@@ -1305,7 +1385,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -1322,17 +1402,25 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -1344,7 +1432,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 3
                   </button>
@@ -1354,7 +1442,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -1363,7 +1451,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:32
                 </div>
@@ -1373,7 +1461,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -1390,17 +1478,25 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -1412,7 +1508,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 4
                   </button>
@@ -1422,7 +1518,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -1431,7 +1527,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:33
                 </div>
@@ -1441,7 +1537,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -1458,17 +1554,25 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -1480,7 +1584,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 5
                   </button>
@@ -1490,7 +1594,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -1499,7 +1603,7 @@ exports[`TrackTable > (Snapshot) Filtering 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:34
                 </div>
@@ -1525,16 +1629,16 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
         class="flex items-center gap-2 mb-2 shrink-0"
       >
         <div
-          class="ml-auto inline-flex w-full max-w-sm items-stretch"
+          class="ml-auto inline-flex w-full max-w-sm items-stretch transition-[filter,transform] duration-150 ease-out motion-reduce:transition-none"
         >
           <div
             class="flex w-full flex-col gap-2"
           >
             <div
-              class="border-border inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2"
+              class="border-border hover:border-foreground/60 inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) transition-[border-color,box-shadow] duration-150 ease-out has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2 motion-reduce:transition-none"
             >
               <input
-                class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-black focus-visible:outline-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+                class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-black focus-visible:outline-none motion-reduce:transition-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
                 data-headlessui-state=""
                 id="input-:r6:"
                 placeholder="Filter tracks"
@@ -1716,7 +1820,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -1733,17 +1837,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -1755,7 +1867,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 1
                     </button>
@@ -1765,7 +1877,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -1774,7 +1886,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:30
                   </div>
@@ -1784,7 +1896,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -1801,17 +1913,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -1823,7 +1943,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 2
                     </button>
@@ -1833,7 +1953,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -1842,7 +1962,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:31
                   </div>
@@ -1852,7 +1972,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -1869,17 +1989,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -1891,7 +2019,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 3
                     </button>
@@ -1901,7 +2029,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -1910,7 +2038,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:32
                   </div>
@@ -1920,7 +2048,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -1937,17 +2065,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -1959,7 +2095,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 4
                     </button>
@@ -1969,7 +2105,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -1978,7 +2114,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:33
                   </div>
@@ -1988,7 +2124,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2005,17 +2141,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2027,7 +2171,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 5
                     </button>
@@ -2037,7 +2181,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2046,7 +2190,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:34
                   </div>
@@ -2056,7 +2200,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2073,17 +2217,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2095,7 +2247,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 6
                     </button>
@@ -2105,7 +2257,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2114,7 +2266,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:35
                   </div>
@@ -2124,7 +2276,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2141,17 +2293,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2163,7 +2323,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 7
                     </button>
@@ -2173,7 +2333,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2182,7 +2342,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:36
                   </div>
@@ -2192,7 +2352,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2209,17 +2369,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2231,7 +2399,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 8
                     </button>
@@ -2241,7 +2409,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2250,7 +2418,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:37
                   </div>
@@ -2260,7 +2428,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2277,17 +2445,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2299,7 +2475,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 9
                     </button>
@@ -2309,7 +2485,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2318,7 +2494,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:38
                   </div>
@@ -2328,7 +2504,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2345,17 +2521,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2367,7 +2551,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 10
                     </button>
@@ -2377,7 +2561,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2386,7 +2570,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:39
                   </div>
@@ -2396,7 +2580,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2413,17 +2597,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2435,7 +2627,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 11
                     </button>
@@ -2445,7 +2637,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2454,7 +2646,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:40
                   </div>
@@ -2464,7 +2656,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2481,17 +2673,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2503,7 +2703,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 12
                     </button>
@@ -2513,7 +2713,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2522,7 +2722,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:41
                   </div>
@@ -2532,7 +2732,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2549,17 +2749,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2571,7 +2779,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 13
                     </button>
@@ -2581,7 +2789,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2590,7 +2798,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:42
                   </div>
@@ -2600,7 +2808,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2617,17 +2825,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2639,7 +2855,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 14
                     </button>
@@ -2649,7 +2865,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2658,7 +2874,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:43
                   </div>
@@ -2668,7 +2884,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2685,17 +2901,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2707,7 +2931,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 15
                     </button>
@@ -2717,7 +2941,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2726,7 +2950,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:44
                   </div>
@@ -2736,7 +2960,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2753,17 +2977,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2775,7 +3007,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 16
                     </button>
@@ -2785,7 +3017,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2794,7 +3026,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:45
                   </div>
@@ -2804,7 +3036,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2821,17 +3053,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2843,7 +3083,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 17
                     </button>
@@ -2853,7 +3093,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2862,7 +3102,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:46
                   </div>
@@ -2872,7 +3112,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2889,17 +3129,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2911,7 +3159,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 18
                     </button>
@@ -2921,7 +3169,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2930,7 +3178,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:47
                   </div>
@@ -2940,7 +3188,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -2957,17 +3205,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -2979,7 +3235,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 19
                     </button>
@@ -2989,7 +3245,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -2998,7 +3254,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:48
                   </div>
@@ -3008,7 +3264,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                 aria-describedby=""
                 aria-disabled="true"
                 aria-roledescription="sortable"
-                class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                 data-testid="track-row"
                 role="button"
                 style="height: 42px;"
@@ -3025,17 +3281,25 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   <div
                     class="flex w-full justify-center"
                   >
-                    <img
-                      class="w-10 min-w-10"
-                      src="https://i.imgur.com/4euOws2.jpg"
-                    />
+                    <div
+                      class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                    >
+                      <img
+                        alt=""
+                        class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                        src="https://i.imgur.com/4euOws2.jpg"
+                      />
+                      <div
+                        class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                      />
+                    </div>
                   </div>
                 </td>
                 <td
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Frank Zappa
                   </div>
@@ -3047,7 +3311,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                     class="flex items-center justify-between gap-2"
                   >
                     <button
-                      class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                      class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                     >
                       Track 20
                     </button>
@@ -3057,7 +3321,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Album
                   </div>
@@ -3066,7 +3330,7 @@ exports[`TrackTable > (Snapshot) LargeDataset 1`] = `
                   class="cursor-default truncate px-2"
                 >
                   <div
-                    class="truncate"
+                    class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                   >
                     0:49
                   </div>
@@ -3099,7 +3363,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
     >
       <div>
         <button
-          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center"
           data-headlessui-state=""
           data-testid="play-all-button"
           type="button"
@@ -3125,7 +3389,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
       </div>
       <div>
         <button
-          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y bg-background text-foreground border-(length:--border-width) hover:shadow-none size-10 justify-center"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y bg-background text-foreground border-(length:--border-width) hover:shadow-none size-10 justify-center"
           data-headlessui-state=""
           data-testid="add-all-to-queue-button"
           type="button"
@@ -3153,16 +3417,16 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
         </button>
       </div>
       <div
-        class="ml-auto inline-flex w-full max-w-sm items-stretch"
+        class="ml-auto inline-flex w-full max-w-sm items-stretch transition-[filter,transform] duration-150 ease-out motion-reduce:transition-none"
       >
         <div
           class="flex w-full flex-col gap-2"
         >
           <div
-            class="border-border inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2"
+            class="border-border hover:border-foreground/60 inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) transition-[border-color,box-shadow] duration-150 ease-out has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2 motion-reduce:transition-none"
           >
             <input
-              class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-black focus-visible:outline-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+              class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-black focus-visible:outline-none motion-reduce:transition-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
               data-headlessui-state=""
               id="input-:r8:"
               placeholder="Filter tracks"
@@ -3344,7 +3608,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -3361,17 +3625,25 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -3383,7 +3655,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 1
                   </button>
@@ -3393,7 +3665,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -3402,7 +3674,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:30
                 </div>
@@ -3412,7 +3684,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -3429,17 +3701,25 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -3451,7 +3731,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 2
                   </button>
@@ -3461,7 +3741,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -3470,7 +3750,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:31
                 </div>
@@ -3480,7 +3760,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
               aria-describedby=""
               aria-disabled="true"
               aria-roledescription="sortable"
-              class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+              class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
               data-testid="track-row"
               role="button"
               style="height: 42px;"
@@ -3497,17 +3777,25 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                 <div
                   class="flex w-full justify-center"
                 >
-                  <img
-                    class="w-10 min-w-10"
-                    src="https://i.imgur.com/4euOws2.jpg"
-                  />
+                  <div
+                    class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                  >
+                    <img
+                      alt=""
+                      class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                      src="https://i.imgur.com/4euOws2.jpg"
+                    />
+                    <div
+                      class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                    />
+                  </div>
                 </div>
               </td>
               <td
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Frank Zappa
                 </div>
@@ -3519,7 +3807,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                   class="flex items-center justify-between gap-2"
                 >
                   <button
-                    class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                    class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                   >
                     Track 3
                   </button>
@@ -3529,7 +3817,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   Album
                 </div>
@@ -3538,7 +3826,7 @@ exports[`TrackTable > (Snapshot) Toolbar 1`] = `
                 class="cursor-default truncate px-2"
               >
                 <div
-                  class="truncate"
+                  class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                 >
                   0:32
                 </div>

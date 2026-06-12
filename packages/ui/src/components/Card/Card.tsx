@@ -29,7 +29,7 @@ export const Card: FC<CardProps> = ({
     data-testid="card"
     size="flexible"
     className={cn(
-      'flex w-42 flex-col items-stretch gap-2 p-2 text-left',
+      'group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left hover:-translate-y-1 focus-visible:-translate-y-1',
       className,
     )}
     onClick={onClick}
@@ -45,7 +45,7 @@ export const Card: FC<CardProps> = ({
           src={src}
           alt={title}
           className="absolute inset-0"
-          imgClassName="h-full w-full object-cover"
+          imgClassName="h-full w-full object-cover transition-transform duration-300 ease-out group-hover/card:scale-105 group-focus-visible/card:scale-105 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
           placeholder={
             <CassetteTape
               size={96}

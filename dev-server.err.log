@@ -1,0 +1,50 @@
+(node:11540) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2m1:18:53 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:18:56 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:18:59 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:19:02 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:21:16 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:21:19 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:21:22 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:21:25 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:21:28 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:21:31 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:21:34 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2m1:21:37 a. m.[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/events[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)

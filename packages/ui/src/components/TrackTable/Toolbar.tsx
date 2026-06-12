@@ -49,7 +49,12 @@ export function Toolbar({
         </Tooltip>
       )}
       {features.filterable && (
-        <div className="ml-auto inline-flex w-full max-w-sm items-stretch">
+        <div
+          className={cn(
+            'ml-auto inline-flex w-full max-w-sm items-stretch transition-[filter,transform] duration-150 ease-out motion-reduce:transition-none',
+            filterValue && '-translate-y-px brightness-110',
+          )}
+        >
           <Input
             size="sm"
             value={filterValue}

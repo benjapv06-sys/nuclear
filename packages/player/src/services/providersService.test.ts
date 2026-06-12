@@ -1,3 +1,4 @@
+import { LazyStore } from '@tauri-apps/plugin-store';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 
 import type {
@@ -6,7 +7,11 @@ import type {
   ProviderKind,
 } from '@nuclearplayer/plugin-sdk';
 
-import { useProvidersStore } from '../stores/providersStore';
+import {
+  initializeProvidersStore,
+  useProvidersStore,
+} from '../stores/providersStore';
+import { resetInMemoryTauriStore } from '../test/utils/inMemoryTauriStore';
 import { providersHost } from './providersHost';
 
 const createProvider = <K extends ProviderKind>(
@@ -16,6 +21,8 @@ const createProvider = <K extends ProviderKind>(
 ) => ({ id, kind, name }) as ProviderDescriptor<K>;
 
 beforeEach(() => {
+  resetInMemoryTauriStore();
+  useProvidersStore.setState({ active: {} });
   providersHost.clear();
 });
 
@@ -134,6 +141,19 @@ describe('Providers service', () => {
     providersHost.register(persisted);
 
     expect(useProvidersStore.getState().active.metadata).toBe('persisted-id');
+  });
+
+  it('loads persisted active provider ids before providers register on startup', async () => {
+    const store = new LazyStore('active-providers.json');
+    await store.set('active', { metadata: 'provider-b' });
+    await store.save();
+
+    await initializeProvidersStore();
+
+    providersHost.register(createProvider('provider-a', 'metadata', 'A'));
+    providersHost.register(createProvider('provider-b', 'metadata', 'B'));
+
+    expect(useProvidersStore.getState().active.metadata).toBe('provider-b');
   });
 
   describe('resolveActiveOnBootstrap', () => {

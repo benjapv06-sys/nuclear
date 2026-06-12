@@ -43,10 +43,10 @@ export function SortableRow<T extends Track = Track>({
       ref={setNodeRef}
       style={style}
       className={cn(
-        'border-border bg-background-secondary group border-b-(length:--border-width) select-none',
+        'border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none',
         {
-          '': !isDragging,
-          'z-50': isDragging,
+          'hover:-translate-y-px': !isDragging,
+          'bg-primary shadow-shadow z-50 scale-[1.01]': isDragging,
           'cursor-grab': isReorderable,
         },
       )}

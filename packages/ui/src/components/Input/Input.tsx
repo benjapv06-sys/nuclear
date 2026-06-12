@@ -10,7 +10,7 @@ import {
 import { cn } from '../../utils';
 
 const inputVariants = cva(
-  'border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none',
+  'border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none',
   {
     variants: {
       variant: {
@@ -102,7 +102,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
         </label>
       )}
       {endAddon ? (
-        <div className="border-border inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2">
+        <div className="border-border hover:border-foreground/60 inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) transition-[border-color,box-shadow] duration-150 ease-out has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2 motion-reduce:transition-none">
           <HeadlessInput
             as="input"
             id={inputId}

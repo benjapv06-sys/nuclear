@@ -9,6 +9,7 @@ import {
   startAdvancedThemeWatcher,
   stopAdvancedThemeWatcher,
 } from '../../services/advancedThemeDirService';
+import { applyAdvancedThemeFromSettingsIfAny } from '../../services/advancedThemeService';
 import { useThemeStore } from '../../stores/themeStore';
 import { SAKURA_THEME_FILE } from '../../test/fixtures/themeRegistry';
 import { PluginFsMock, watchImmediateCb } from '../../test/mocks/plugin-fs';
@@ -102,9 +103,12 @@ describe('Themes view', async () => {
     await waitFor(() =>
       expect(themes.applyAdvancedTheme).toHaveBeenCalledTimes(2),
     );
-    expect(fs.readTextFile).toHaveBeenCalledWith('themes/my.json', {
-      baseDir: '/home/user/.local/share/com.nuclearplayer',
-    });
+    expect(fs.readTextFile).toHaveBeenCalledWith(
+      expect.stringMatching(/^themes[\\/]my\.json$/),
+      {
+        baseDir: '/home/user/.local/share/com.nuclearplayer',
+      },
+    );
   });
 
   it("doesn't reload when a different file changes or when not in advanced mode", async () => {
@@ -207,6 +211,36 @@ describe('Themes view', async () => {
       ).toBe(true);
     });
 
+    it('reapplies the saved advanced theme on startup, including font vars', async () => {
+      PluginFsMock.setReadTextFile(
+        JSON.stringify({
+          version: 1,
+          name: 'My Theme',
+          vars: {
+            primary: '#123',
+            'font-family': "'Space Mono', monospace",
+          },
+        }),
+      );
+      useThemeStore.setState({
+        activeTheme: { type: 'advanced', path: '/themes/my.json' },
+        marketplaceThemes: [],
+      });
+
+      await applyAdvancedThemeFromSettingsIfAny();
+
+      expect(fs.readTextFile).toHaveBeenCalledWith('/themes/my.json', {
+        baseDir: '/home/user/.local/share/com.nuclearplayer',
+      });
+      expect(themes.applyAdvancedTheme).toHaveBeenCalledWith(
+        expect.objectContaining({
+          vars: expect.objectContaining({
+            'font-family': "'Space Mono', monospace",
+          }),
+        }),
+      );
+    });
+
     it('resets to default when the Default basic theme is clicked', async () => {
       PluginFsMock.setReadTextFile(
         JSON.stringify({
@@ -259,6 +293,38 @@ describe('Themes view', async () => {
       expect(ThemesWrapper.activeBasicTheme).toBeNull();
       expect(ThemesWrapper.advancedThemeSelect.selected()).toBe(
         'Select a theme',
+      );
+    });
+
+    it('reapplies the saved marketplace theme on startup, including font vars', async () => {
+      PluginFsMock.setReadTextFile(
+        JSON.stringify({
+          version: 1,
+          name: 'Sakura',
+          vars: {
+            primary: '#f6a',
+            'font-family-heading': "'Bricolage Grotesque', sans-serif",
+          },
+        }),
+      );
+      useThemeStore.setState({
+        activeTheme: { type: 'marketplace', id: 'sakura' },
+        marketplaceThemes: [
+          { id: 'sakura', name: 'Sakura', path: 'themes/store/sakura.json' },
+        ],
+      });
+
+      await applyAdvancedThemeFromSettingsIfAny();
+
+      expect(fs.readTextFile).toHaveBeenCalledWith('themes/store/sakura.json', {
+        baseDir: '/home/user/.local/share/com.nuclearplayer',
+      });
+      expect(themes.applyAdvancedTheme).toHaveBeenCalledWith(
+        expect.objectContaining({
+          vars: expect.objectContaining({
+            'font-family-heading': "'Bricolage Grotesque', sans-serif",
+          }),
+        }),
       );
     });
 

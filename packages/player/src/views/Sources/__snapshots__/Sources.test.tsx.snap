@@ -65,7 +65,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
             class="flex flex-row items-center gap-2"
           >
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-8 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-8 justify-center"
               data-disabled=""
               data-headlessui-state="disabled"
               disabled=""
@@ -90,7 +90,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
               </svg>
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-8 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-8 justify-center"
               data-disabled=""
               data-headlessui-state="disabled"
               disabled=""
@@ -120,7 +120,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
           class="flex w-full flex-col gap-2"
         >
           <input
-            class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none bg-background rounded-md border-(length:--border-width) h-8"
+            class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none bg-background rounded-md border-(length:--border-width) h-8"
             data-headlessui-state=""
             data-testid="search-box"
             id="input-:r0:"
@@ -205,7 +205,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
           class="mb-4 flex flex-row items-center justify-end"
         >
           <button
-            class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center top-2 px-2 right-1"
+            class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center top-2 px-2 right-1"
             data-headlessui-state=""
             data-testid="sidebar-toggle-left"
             type="button"
@@ -251,11 +251,11 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-[transform,box-shadow,background-color,border-color] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-150 ease-out group-hover/sidebar-item:scale-105 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -291,11 +291,11 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-[transform,box-shadow,background-color,border-color] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-150 ease-out group-hover/sidebar-item:scale-105 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -335,11 +335,11 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-[transform,box-shadow,background-color,border-color] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-150 ease-out group-hover/sidebar-item:scale-105 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -382,11 +382,11 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-[transform,box-shadow,background-color,border-color] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-150 ease-out group-hover/sidebar-item:scale-105 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -424,11 +424,11 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-[transform,box-shadow,background-color,border-color] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-150 ease-out group-hover/sidebar-item:scale-105 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -476,11 +476,11 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) bg-primary border-border font-bold"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-[transform,box-shadow,background-color,border-color] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none bg-primary border-border shadow-shadow font-bold"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-150 ease-out group-hover/sidebar-item:scale-105 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -529,12 +529,13 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
             </div>
             <div>
               <div
-                class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) cursor-pointer hover:bg-background-secondary border-transparent"
+                class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-[transform,box-shadow,background-color,border-color] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer hover:bg-background-secondary hover:shadow-shadow border-transparent"
                 data-testid="sidebar-navigation-item"
                 role="button"
+                tabindex="0"
               >
                 <div
-                  class="flex size-8 shrink-0 items-center justify-center"
+                  class="flex size-8 shrink-0 items-center justify-center transition-transform duration-150 ease-out group-hover/sidebar-item:scale-105 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                 >
                   <svg
                     aria-hidden="true"
@@ -1048,7 +1049,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
           class="mb-4 flex flex-row items-center justify-start"
         >
           <button
-            class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center top-2 px-2 left-1"
+            class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center top-2 px-2 left-1"
             data-headlessui-state=""
             data-testid="sidebar-toggle-right"
             type="button"
@@ -1140,7 +1141,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
     >
       <div
         aria-disabled="false"
-        class="relative h-4 w-full cursor-pointer"
+        class="group/seek relative h-4 w-full outline-none cursor-pointer"
       >
         <div
           class="absolute right-0 left-0 z-10 flex h-full flex-row items-center justify-between px-2 pt-0.5 text-xs leading-none"
@@ -1157,13 +1158,17 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
           </span>
         </div>
         <div
-          class="border-border bg-background-secondary absolute inset-0 border-t-(length:--border-width)"
+          class="border-border bg-background-secondary absolute inset-0 border-t-(length:--border-width) transition-[filter,box-shadow] duration-150 ease-out group-hover/seek:brightness-105 motion-reduce:transition-none"
         >
           <div
-            class="bg-primary h-full transition-none"
+            class="bg-primary h-full transition-[width,filter] duration-150 ease-out group-hover/seek:brightness-110 motion-reduce:transition-none"
             style="width: 0%;"
           />
         </div>
+        <div
+          class="border-border bg-primary shadow-shadow pointer-events-none absolute top-1/2 z-20 size-3 -translate-x-1/2 -translate-y-1/2 rounded-full border-(length:--border-width) opacity-0 transition-[opacity,transform] duration-150 ease-out group-hover/seek:scale-110 group-hover/seek:opacity-100 motion-reduce:transition-none motion-reduce:group-hover/seek:scale-100"
+          style="left: 0%;"
+        />
       </div>
     </div>
     <footer
@@ -1233,7 +1238,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
           >
             <div>
               <button
-                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
                 data-headlessui-state=""
                 data-testid="player-shuffle-button"
                 type="button"
@@ -1270,7 +1275,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
               </button>
             </div>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
               data-headlessui-state=""
               type="button"
             >
@@ -1296,7 +1301,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
               </svg>
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none justify-center size-11 hover:scale-105 active:scale-95 motion-reduce:hover:scale-100 motion-reduce:active:scale-100"
               data-headlessui-state=""
               data-testid="player-play-button"
               type="button"
@@ -1320,7 +1325,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
               </svg>
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
               data-headlessui-state=""
               type="button"
             >
@@ -1347,7 +1352,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
             </button>
             <div>
               <button
-                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
                 data-headlessui-state=""
                 data-testid="player-repeat-button"
                 type="button"
@@ -1389,7 +1394,7 @@ exports[`Sources view > (Snapshot) renders the view 1`] = `
             class="flex items-center gap-2"
           >
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
               data-headlessui-state=""
               type="button"
             >

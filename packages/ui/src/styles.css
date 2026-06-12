@@ -1,6 +1,37 @@
 @import 'tailwindcss';
 
 @layer utilities {
+  .feedback-surface {
+    position: relative;
+    isolation: isolate;
+    transform: translateZ(0);
+  }
+
+  .feedback-surface::after {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    content: '';
+    background:
+      linear-gradient(135deg, rgb(255 255 255 / 0.22), transparent 45%),
+      radial-gradient(
+        circle at 50% 0%,
+        rgb(255 255 255 / 0.18),
+        transparent 55%
+      );
+    opacity: 0;
+    transition: opacity 160ms ease-out;
+  }
+
+  .feedback-surface:not(:disabled):not([aria-disabled='true']):hover::after,
+  .feedback-surface:not(:disabled):not(
+      [aria-disabled='true']
+    ):focus-visible::after {
+    opacity: 1;
+  }
+
   .bg-stripes-diagonal {
     background-image: repeating-linear-gradient(
       135deg,
@@ -14,6 +45,16 @@
   @keyframes seekbar-stripes {
     to {
       background-position: 22.6px 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .feedback-surface,
+    .feedback-surface::after,
+    .bg-stripes-diagonal {
+      transition-duration: 0.01ms;
+      animation-duration: 0.01ms;
+      animation-iteration-count: 1;
     }
   }
 }

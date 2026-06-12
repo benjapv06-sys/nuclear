@@ -26,8 +26,12 @@ export const RemoveCell = <T extends Track>({
           meta.onRemove(track, row.index);
         }}
         aria-label="Remove from list"
+        className="opacity-45 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 hover:scale-105 hover:opacity-100 motion-reduce:transition-none motion-reduce:hover:scale-100"
       >
-        <Trash2 size={16} className="text-foreground-secondary" />
+        <Trash2
+          size={16}
+          className="text-foreground-secondary group-hover/track-row:text-foreground transition-colors duration-150"
+        />
       </Button>
     </td>
   );

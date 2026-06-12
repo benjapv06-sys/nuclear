@@ -4,6 +4,16 @@ import userEvent from '@testing-library/user-event';
 import { Button } from '..';
 import { Popover } from './Popover';
 
+const stripTransitionAttributes = () => {
+  document.body
+    .querySelectorAll('[data-closed], [data-enter], [data-transition]')
+    .forEach((element) => {
+      element.removeAttribute('data-closed');
+      element.removeAttribute('data-enter');
+      element.removeAttribute('data-transition');
+    });
+};
+
 describe('Popover', () => {
   it('(Snapshot) renders with all props', async () => {
     render(
@@ -17,6 +27,7 @@ describe('Popover', () => {
     );
     await userEvent.click(screen.getByText('Open Popover'));
     await screen.findByText('Popover Content');
+    stripTransitionAttributes();
     expect(document.body).toMatchSnapshot();
   });
 
@@ -28,6 +39,7 @@ describe('Popover', () => {
     );
     await userEvent.click(screen.getByText('Open Popover'));
     await screen.findByText('Popover Content');
+    stripTransitionAttributes();
     expect(document.body).toMatchSnapshot();
   });
 
@@ -43,6 +55,7 @@ describe('Popover', () => {
     );
     await userEvent.click(screen.getByText('Open'));
     await screen.findByText('Action One');
+    stripTransitionAttributes();
     expect(document.body).toMatchSnapshot();
   });
 

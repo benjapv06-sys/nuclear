@@ -65,9 +65,10 @@ export const PluginFsMock = {
   setReadTextFileByMap: (value: Record<string, string>) => {
     Object.assign(readTextFileMap, value);
     (fs.readTextFile as Mock).mockImplementation(async (path: string) => {
+      const normalizedPath = path.replace(/\\/g, '/');
       const keys = Object.keys(readTextFileMap);
       const keyToReturn = keys.find((key) => {
-        if (path.endsWith(key)) {
+        if (normalizedPath.endsWith(key.replace(/\\/g, '/'))) {
           return true;
         }
       });

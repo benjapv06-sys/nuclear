@@ -19,7 +19,7 @@ exports[`Popover > (Snapshot) renders menu with items 1`] = `
         id="headlessui-popover-button-:rf:"
       >
         <button
-          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
           data-headlessui-state="hover"
           data-hover=""
           type="button"
@@ -122,7 +122,7 @@ exports[`Popover > (Snapshot) renders with all props 1`] = `
         id="headlessui-popover-button-:r2:"
       >
         <button
-          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
           data-headlessui-state="hover"
           data-hover=""
           type="button"
@@ -192,7 +192,7 @@ exports[`Popover > (Snapshot) renders with backdrop 1`] = `
         id="headlessui-popover-button-:r8:"
       >
         <button
-          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
           data-headlessui-state="hover"
           data-hover=""
           type="button"
@@ -210,11 +210,8 @@ exports[`Popover > (Snapshot) renders with backdrop 1`] = `
       <div
         aria-hidden="true"
         class="fixed inset-0 bg-black/20 transition duration-150 ease-out data-closed:opacity-0"
-        data-closed=""
-        data-enter=""
         data-headlessui-state="open"
         data-open=""
-        data-transition=""
         id="headlessui-popover-backdrop-:ra:"
         style=""
       />

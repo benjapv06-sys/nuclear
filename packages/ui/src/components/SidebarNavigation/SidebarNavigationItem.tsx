@@ -40,17 +40,27 @@ export const SidebarNavigationItem: FC<SidebarNavigationItemProps> = ({
           <div
             role={onClick ? 'button' : undefined}
             onClick={onClick}
+            onKeyDown={(event) => {
+              if (!onClick || (event.key !== 'Enter' && event.key !== ' ')) {
+                return;
+              }
+
+              event.preventDefault();
+              onClick();
+            }}
+            tabIndex={onClick ? 0 : undefined}
             data-testid="sidebar-navigation-item"
             className={cn(
-              'flex w-full items-center overflow-hidden rounded-md border-(length:--border-width)',
+              'feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-[transform,box-shadow,background-color,border-color] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none',
               {
                 'cursor-pointer': onClick,
-                'bg-primary border-border font-bold': active,
-                'hover:bg-background-secondary border-transparent': !active,
+                'bg-primary border-border shadow-shadow font-bold': active,
+                'hover:bg-background-secondary hover:shadow-shadow border-transparent':
+                  !active,
               },
             )}
           >
-            <div className="flex size-8 shrink-0 items-center justify-center">
+            <div className="flex size-8 shrink-0 items-center justify-center transition-transform duration-150 ease-out group-hover/sidebar-item:scale-105 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100">
               {icon}
             </div>
             <span

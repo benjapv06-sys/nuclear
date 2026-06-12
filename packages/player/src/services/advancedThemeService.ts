@@ -7,7 +7,7 @@ import {
   setThemeId,
 } from '@nuclearplayer/themes';
 
-import { useThemeStore, type AdvancedTheme } from '../stores/themeStore';
+import { useThemeStore } from '../stores/themeStore';
 
 export const loadAndApplyThemeFile = async (path: string): Promise<void> => {
   const contents = await readTextFile(path, { baseDir: BaseDirectory.AppData });
@@ -38,16 +38,23 @@ export const loadAndApplyMarketplaceTheme = async (
 };
 
 export const applyAdvancedThemeFromSettingsIfAny = async (): Promise<void> => {
-  const { activeTheme, isAdvancedThemeSelected } = useThemeStore.getState();
-  if (!isAdvancedThemeSelected()) {
+  const { activeTheme, marketplaceThemes } = useThemeStore.getState();
+
+  if (activeTheme.type === 'basic') {
     return;
   }
 
-  const { path } = activeTheme as AdvancedTheme;
+  const path =
+    activeTheme.type === 'advanced'
+      ? activeTheme.path
+      : marketplaceThemes.find((theme) => theme.id === activeTheme.id)?.path;
+
+  if (!path) {
+    return;
+  }
 
   try {
-    setThemeId('');
-    await loadAndApplyAdvancedThemeFromFile(path);
+    await loadAndApplyThemeFile(path);
   } catch (error) {
     toast.error("Couldn't load advanced theme", {
       description: error instanceof Error ? error.message : String(error),

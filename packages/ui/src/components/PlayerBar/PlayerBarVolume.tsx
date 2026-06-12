@@ -20,11 +20,17 @@ export const PlayerBarVolume: FC<PlayerBarVolumeProps> = ({
   className = '',
 }) => {
   return (
-    <div className={cn('flex items-center gap-2', className)}>
-      <Button size="icon" variant="text" disabled={disabled}>
-        <Volume2 size={16} />
+    <div className={cn('group/volume flex items-center gap-2', className)}>
+      <Button size="icon" variant="text" disabled={disabled} className="group">
+        <Volume2
+          size={16}
+          className="transition-transform duration-150 group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+        />
       </Button>
-      <div className="w-24" data-testid="player-volume-slider">
+      <div
+        className="w-24 transition-[opacity,filter] duration-150 group-hover/volume:brightness-110 motion-reduce:transition-none"
+        data-testid="player-volume-slider"
+      >
         <Slider
           value={value}
           defaultValue={defaultValue}

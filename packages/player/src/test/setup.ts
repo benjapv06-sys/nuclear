@@ -10,6 +10,46 @@ process.env.TZ = 'UTC';
 
 setupResizeObserverMock();
 
+const createStorageMock = (): Storage => {
+  const storage = new Map<string, string>();
+
+  return {
+    get length() {
+      return storage.size;
+    },
+    clear() {
+      storage.clear();
+    },
+    getItem(key: string) {
+      return storage.get(key) ?? null;
+    },
+    key(index: number) {
+      return Array.from(storage.keys())[index] ?? null;
+    },
+    removeItem(key: string) {
+      storage.delete(key);
+    },
+    setItem(key: string, value: string) {
+      storage.set(key, String(value));
+    },
+  };
+};
+
+const isLocalStorageMissing = (() => {
+  try {
+    return !globalThis.localStorage;
+  } catch {
+    return true;
+  }
+})();
+
+if (isLocalStorageMissing) {
+  Object.defineProperty(globalThis, 'localStorage', {
+    configurable: true,
+    value: createStorageMock(),
+  });
+}
+
 Element.prototype.hasPointerCapture = vi.fn().mockReturnValue(false);
 Element.prototype.setPointerCapture = vi.fn();
 Element.prototype.releasePointerCapture = vi.fn();

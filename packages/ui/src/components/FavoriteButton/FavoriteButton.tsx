@@ -50,7 +50,12 @@ export const FavoriteButton: FC<FavoriteButtonProps> = ({
     <Button
       size={buttonSizes[resolvedSize]}
       variant="text"
-      className={cn(favoriteButtonVariants({ size, className }))}
+      className={cn(
+        favoriteButtonVariants({ size }),
+        'group/favorite',
+        isFavorite && 'text-accent-red',
+        className,
+      )}
       onClick={(e) => {
         e.stopPropagation();
         onToggle();
@@ -61,9 +66,9 @@ export const FavoriteButton: FC<FavoriteButtonProps> = ({
       <Heart
         size={iconSizes[resolvedSize]}
         className={cn(
-          'transition-colors',
+          'transition-[color,fill,transform,filter] duration-150 ease-out group-hover/favorite:scale-110 group-active/favorite:scale-95 motion-reduce:transition-none motion-reduce:group-hover/favorite:scale-100 motion-reduce:group-active/favorite:scale-100',
           isFavorite
-            ? 'fill-accent-red text-accent-red'
+            ? 'fill-accent-red text-accent-red drop-shadow-[0_0_8px_color-mix(in_oklch,var(--accent-red),transparent_45%)]'
             : 'text-foreground-secondary hover:text-foreground',
         )}
       />

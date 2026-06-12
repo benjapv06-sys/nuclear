@@ -89,12 +89,13 @@ exports[`QueuePanel > (Snapshot) renders collapsed state 1`] = `
                     class="pointer-events-none absolute -top-0.5 -left-0.5 h-10 w-10 rounded-md transition-all bg-primary"
                   />
                   <div
-                    class="border-border text-foreground rounded-md border-(length:--border-width) shadow-none group relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all bg-primary h-9 w-9 justify-center p-0"
+                    class="border-border text-foreground rounded-md border-(length:--border-width) shadow-none feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-[transform,box-shadow,background-color,border-color,opacity] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none bg-primary h-9 w-9 justify-center p-0"
                     role="button"
+                    tabindex="0"
                   >
                     <img
                       alt="Bohemian Rhapsody"
-                      class="h-full w-full object-cover"
+                      class="h-full w-full object-cover transition-transform duration-200 ease-out group-hover:scale-110 group-focus-visible:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100 motion-reduce:group-focus-visible:scale-100"
                       src="https://picsum.photos/seed/1/300"
                     />
                   </div>
@@ -130,12 +131,13 @@ exports[`QueuePanel > (Snapshot) renders collapsed state 1`] = `
                     class="pointer-events-none absolute -top-0.5 -left-0.5 h-10 w-10 rounded-md transition-all"
                   />
                   <div
-                    class="border-border text-foreground rounded-md border-(length:--border-width) bg-background-secondary shadow-none group relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all h-9 w-9 justify-center p-0"
+                    class="border-border text-foreground rounded-md border-(length:--border-width) bg-background-secondary shadow-none feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-[transform,box-shadow,background-color,border-color,opacity] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none h-9 w-9 justify-center p-0"
                     role="button"
+                    tabindex="0"
                   >
                     <img
                       alt="Stairway to Heaven"
-                      class="h-full w-full object-cover"
+                      class="h-full w-full object-cover transition-transform duration-200 ease-out group-hover:scale-110 group-focus-visible:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100 motion-reduce:group-focus-visible:scale-100"
                       src="https://picsum.photos/seed/2/300"
                     />
                   </div>
@@ -171,12 +173,13 @@ exports[`QueuePanel > (Snapshot) renders collapsed state 1`] = `
                     class="pointer-events-none absolute -top-0.5 -left-0.5 h-10 w-10 rounded-md transition-all"
                   />
                   <div
-                    class="border-border text-foreground rounded-md border-(length:--border-width) bg-background-secondary shadow-none group relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all opacity-70 h-9 w-9 justify-center p-0"
+                    class="border-border text-foreground rounded-md border-(length:--border-width) bg-background-secondary shadow-none feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-[transform,box-shadow,background-color,border-color,opacity] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none opacity-70 h-9 w-9 justify-center p-0"
                     role="button"
+                    tabindex="0"
                   >
                     <img
                       alt="Hotel California"
-                      class="h-full w-full object-cover"
+                      class="h-full w-full object-cover transition-transform duration-200 ease-out group-hover:scale-110 group-focus-visible:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100 motion-reduce:group-focus-visible:scale-100"
                       src="https://picsum.photos/seed/3/300"
                     />
                     <div
@@ -246,10 +249,11 @@ exports[`QueuePanel > (Snapshot) renders default state 1`] = `
             >
               <div>
                 <div
-                  class="border-border text-foreground h-full rounded-md border-(length:--border-width) shadow-none group group relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all bg-primary w-full p-0"
+                  class="border-border text-foreground h-full rounded-md border-(length:--border-width) shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-[transform,box-shadow,background-color,border-color,opacity] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none bg-primary w-full p-0"
                   data-is-current="true"
                   data-testid="queue-item"
                   role="button"
+                  tabindex="0"
                 >
                   <div
                     class="bg-background flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-sm"
@@ -257,7 +261,7 @@ exports[`QueuePanel > (Snapshot) renders default state 1`] = `
                   >
                     <img
                       alt="Bohemian Rhapsody"
-                      class="h-full w-full object-cover"
+                      class="h-full w-full object-cover transition-transform duration-200 ease-out group-hover:scale-105 group-focus-visible:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100 motion-reduce:group-focus-visible:scale-100"
                       src="https://picsum.photos/seed/1/300"
                     />
                   </div>
@@ -288,7 +292,7 @@ exports[`QueuePanel > (Snapshot) renders default state 1`] = `
                     </div>
                     <button
                       aria-label="Remove from queue"
-                      class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border border-(length:--border-width) size-8 justify-center absolute right-4 opacity-0 group-hover:opacity-100"
+                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
                       data-headlessui-state=""
                       data-testid="queue-item-remove-button"
                       type="button"
@@ -340,10 +344,11 @@ exports[`QueuePanel > (Snapshot) renders default state 1`] = `
             >
               <div>
                 <div
-                  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group group relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all w-full p-0"
+                  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-[transform,box-shadow,background-color,border-color,opacity] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none w-full p-0"
                   data-is-current="false"
                   data-testid="queue-item"
                   role="button"
+                  tabindex="0"
                 >
                   <div
                     class="bg-background flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-sm"
@@ -351,7 +356,7 @@ exports[`QueuePanel > (Snapshot) renders default state 1`] = `
                   >
                     <img
                       alt="Stairway to Heaven"
-                      class="h-full w-full object-cover"
+                      class="h-full w-full object-cover transition-transform duration-200 ease-out group-hover:scale-105 group-focus-visible:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100 motion-reduce:group-focus-visible:scale-100"
                       src="https://picsum.photos/seed/2/300"
                     />
                   </div>
@@ -382,7 +387,7 @@ exports[`QueuePanel > (Snapshot) renders default state 1`] = `
                     </div>
                     <button
                       aria-label="Remove from queue"
-                      class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border border-(length:--border-width) size-8 justify-center absolute right-4 opacity-0 group-hover:opacity-100"
+                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
                       data-headlessui-state=""
                       data-testid="queue-item-remove-button"
                       type="button"
@@ -434,10 +439,11 @@ exports[`QueuePanel > (Snapshot) renders default state 1`] = `
             >
               <div>
                 <div
-                  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group group relative flex items-center gap-2 overflow-hidden ring-offset-white transition-all opacity-70 w-full p-0"
+                  class="border-border text-foreground h-full rounded-md border-(length:--border-width) bg-background-secondary shadow-none group feedback-surface group hover:shadow-shadow relative flex items-center gap-2 overflow-hidden ring-offset-white transition-[transform,box-shadow,background-color,border-color,opacity] duration-150 ease-out outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none opacity-70 w-full p-0"
                   data-is-current="false"
                   data-testid="queue-item"
                   role="button"
+                  tabindex="0"
                 >
                   <div
                     class="bg-background flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-sm"
@@ -445,7 +451,7 @@ exports[`QueuePanel > (Snapshot) renders default state 1`] = `
                   >
                     <img
                       alt="Hotel California"
-                      class="h-full w-full object-cover"
+                      class="h-full w-full object-cover transition-transform duration-200 ease-out group-hover:scale-105 group-focus-visible:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100 motion-reduce:group-focus-visible:scale-100"
                       src="https://picsum.photos/seed/3/300"
                     />
                   </div>
@@ -476,7 +482,7 @@ exports[`QueuePanel > (Snapshot) renders default state 1`] = `
                     </div>
                     <button
                       aria-label="Remove from queue"
-                      class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border border-(length:--border-width) size-8 justify-center absolute right-4 opacity-0 group-hover:opacity-100"
+                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border hover:shadow-shadow border-(length:--border-width) hover:-translate-y-0.5 size-8 justify-center absolute right-4 translate-x-2 opacity-0 transition-[opacity,transform] duration-150 ease-out group-focus-within:translate-x-0 group-focus-within:opacity-100 group-hover:translate-x-0 group-hover:opacity-100 motion-reduce:transition-none"
                       data-headlessui-state=""
                       data-testid="queue-item-remove-button"
                       type="button"

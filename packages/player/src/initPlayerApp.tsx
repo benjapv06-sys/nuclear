@@ -20,6 +20,7 @@ import { hydratePluginsFromRegistry } from './services/plugins/pluginBootstrap';
 import { ytdlpEnsureInstalled } from './services/tauri/commands';
 import { initializeFavoritesStore } from './stores/favoritesStore';
 import { initializePlaylistStore } from './stores/playlistStore';
+import { initializeProvidersStore } from './stores/providersStore';
 import { initializeQueueStore } from './stores/queueStore';
 import { initializeSettingsStore } from './stores/settingsStore';
 import { initializeShortcutsStore } from './stores/shortcutsStore';
@@ -32,6 +33,7 @@ export const initPlayerApp = async (
   initLogStream();
 
   await initializeSettingsStore()
+    .then(() => initializeProvidersStore())
     .then(() => initializeShortcutsStore())
     .then(() => initializeQueueStore())
     .then(() => initializeFavoritesStore())

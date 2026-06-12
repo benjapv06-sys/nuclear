@@ -4,13 +4,13 @@ exports[`FavoriteButton > (Snapshot) renders favorited state 1`] = `
 <div>
   <button
     aria-label="Remove from favorites"
-    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center group/favorite text-accent-red"
     data-headlessui-state=""
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="lucide lucide-heart transition-colors fill-accent-red text-accent-red"
+      class="lucide lucide-heart transition-[color,fill,transform,filter] duration-150 ease-out group-hover/favorite:scale-110 group-active/favorite:scale-95 motion-reduce:transition-none motion-reduce:group-hover/favorite:scale-100 motion-reduce:group-active/favorite:scale-100 fill-accent-red text-accent-red drop-shadow-[0_0_8px_color-mix(in_oklch,var(--accent-red),transparent_45%)]"
       fill="none"
       height="24"
       stroke="currentColor"
@@ -33,13 +33,13 @@ exports[`FavoriteButton > (Snapshot) renders unfavorited state 1`] = `
 <div>
   <button
     aria-label="Add to favorites"
-    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center group/favorite"
     data-headlessui-state=""
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="lucide lucide-heart transition-colors text-foreground-secondary hover:text-foreground"
+      class="lucide lucide-heart transition-[color,fill,transform,filter] duration-150 ease-out group-hover/favorite:scale-110 group-active/favorite:scale-95 motion-reduce:transition-none motion-reduce:group-hover/favorite:scale-100 motion-reduce:group-active/favorite:scale-100 text-foreground-secondary hover:text-foreground"
       fill="none"
       height="24"
       stroke="currentColor"
