@@ -18,7 +18,7 @@ exports[`PlayerBarSeekBar > (Snapshot) default render 1`] = `
         class="relative h-1 w-full rounded-full bg-white/15 transition-[height,filter,box-shadow] duration-200 ease-out group-hover/seek:h-1.5 motion-reduce:transition-none"
       >
         <div
-          class="group-hover/seek:bg-primary h-full rounded-full bg-white motion-reduce:transition-none transition-[width,background-color] duration-300 ease-linear"
+          class="group-hover/seek:bg-primary h-full rounded-full bg-white transition-[width,background-color] duration-300 ease-out motion-reduce:transition-none"
           style="width: 25%;"
         />
       </div>
