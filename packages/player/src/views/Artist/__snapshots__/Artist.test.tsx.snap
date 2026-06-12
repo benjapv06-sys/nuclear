@@ -65,7 +65,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
             class="flex flex-row items-center gap-2"
           >
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-8 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-8 justify-center"
               data-headlessui-state=""
               type="button"
             >
@@ -88,7 +88,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               </svg>
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-8 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-8 justify-center"
               data-disabled=""
               data-headlessui-state="disabled"
               disabled=""
@@ -118,7 +118,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
           class="flex w-full flex-col gap-2"
         >
           <input
-            class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none bg-background rounded-md border-(length:--border-width) h-8"
+            class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none bg-background rounded-md border-(length:--border-width) h-8"
             data-headlessui-state=""
             data-testid="search-box"
             id="input-:r0:"
@@ -203,7 +203,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
           class="mb-4 flex flex-row items-center justify-end"
         >
           <button
-            class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center top-2 px-2 right-1"
+            class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-10 justify-center top-2 px-2 right-1"
             data-headlessui-state=""
             data-testid="sidebar-toggle-left"
             type="button"
@@ -249,11 +249,11 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -289,11 +289,11 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -333,11 +333,11 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -380,11 +380,11 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -422,11 +422,11 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -471,11 +471,11 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -524,12 +524,13 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
             </div>
             <div>
               <div
-                class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) cursor-pointer hover:bg-background-secondary border-transparent"
+                class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer hover:bg-background-secondary hover:shadow-shadow border-transparent"
                 data-testid="sidebar-navigation-item"
                 role="button"
+                tabindex="0"
               >
                 <div
-                  class="flex size-8 shrink-0 items-center justify-center"
+                  class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                 >
                   <svg
                     aria-hidden="true"
@@ -593,14 +594,14 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                 >
                   <button
                     aria-label="Add to favorites"
-                    class="inline-flex cursor-pointer items-center whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground size-10 justify-center bg-background border-border absolute top-4 right-4 z-10 rounded-md border-(length:--border-width)"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center group/favorite bg-background border-border absolute top-4 right-4 z-10 rounded-md border-(length:--border-width)"
                     data-headlessui-state=""
                     data-testid="artist-favorite-button"
                     type="button"
                   >
                     <svg
                       aria-hidden="true"
-                      class="lucide lucide-heart transition-colors text-foreground-secondary hover:text-foreground"
+                      class="lucide lucide-heart transition-[color,fill,transform,filter] duration-150 ease-out group-hover/favorite:scale-110 group-active/favorite:scale-95 motion-reduce:transition-none motion-reduce:group-hover/favorite:scale-100 motion-reduce:group-active/favorite:scale-100 text-foreground-secondary hover:text-foreground"
                       fill="none"
                       height="24"
                       stroke="currentColor"
@@ -703,7 +704,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                         >
                           <div>
                             <button
-                              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center"
+                              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-10 justify-center"
                               data-headlessui-state=""
                               data-testid="play-all-button"
                               type="button"
@@ -729,7 +730,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                           </div>
                           <div>
                             <button
-                              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y bg-background text-foreground border-(length:--border-width) hover:shadow-none size-10 justify-center"
+                              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y bg-background text-foreground border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-10 justify-center"
                               data-headlessui-state=""
                               data-testid="add-all-to-queue-button"
                               type="button"
@@ -866,7 +867,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                                   aria-describedby=""
                                   aria-disabled="true"
                                   aria-roledescription="sortable"
-                                  class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                                  class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                                   data-testid="track-row"
                                   role="button"
                                   style="height: 42px;"
@@ -877,13 +878,13 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                                   >
                                     <button
                                       aria-label="Add to favorites"
-                                      class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center group/favorite"
                                       data-headlessui-state=""
                                       type="button"
                                     >
                                       <svg
                                         aria-hidden="true"
-                                        class="lucide lucide-heart transition-colors text-foreground-secondary hover:text-foreground"
+                                        class="lucide lucide-heart transition-[color,fill,transform,filter] duration-150 ease-out group-hover/favorite:scale-110 group-active/favorite:scale-95 motion-reduce:transition-none motion-reduce:group-hover/favorite:scale-100 motion-reduce:group-active/favorite:scale-100 text-foreground-secondary hover:text-foreground"
                                         fill="none"
                                         height="16"
                                         stroke="currentColor"
@@ -906,17 +907,25 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                                     <div
                                       class="flex w-full justify-center"
                                     >
-                                      <img
-                                        class="w-10 min-w-10"
-                                        src="https://img/track.jpg"
-                                      />
+                                      <div
+                                        class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                                      >
+                                        <img
+                                          alt=""
+                                          class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                                          src="https://img/track.jpg"
+                                        />
+                                        <div
+                                          class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                                        />
+                                      </div>
                                     </div>
                                   </td>
                                   <td
                                     class="cursor-default truncate px-2"
                                   >
                                     <div
-                                      class="truncate"
+                                      class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                                     >
                                       Test Artist
                                     </div>
@@ -928,7 +937,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                                       class="flex items-center justify-between gap-2"
                                     >
                                       <button
-                                        class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                                        class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                                       >
                                         Smells Like Cheap Spirit
                                       </button>
@@ -937,7 +946,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                                       >
                                         <button
                                           aria-label="Add to queue"
-                                          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center opacity-0 transition-none group-hover:opacity-100"
+                                          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center translate-x-1 opacity-0 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:translate-x-0 group-focus-within/track-row:opacity-100 group-hover/track-row:translate-x-0 group-hover/track-row:opacity-100 motion-reduce:transition-none"
                                           data-headlessui-state=""
                                           data-testid="add-to-queue-button"
                                           type="button"
@@ -967,7 +976,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                                           aria-expanded="false"
                                           aria-haspopup="menu"
                                           aria-label="Track options"
-                                          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center opacity-0 transition-none group-hover:opacity-100"
+                                          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center translate-x-1 opacity-0 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:translate-x-0 group-focus-within/track-row:opacity-100 group-hover/track-row:translate-x-0 group-hover/track-row:opacity-100 motion-reduce:transition-none"
                                           data-headlessui-state=""
                                           data-state="closed"
                                           data-testid="track-context-menu-button"
@@ -1072,7 +1081,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                   role="grid"
                 >
                   <button
-                    class="cursor-pointer rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-auto flex w-42 flex-col items-stretch gap-2 p-2 text-left"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 focus-visible:-translate-y-1.5"
                     data-headlessui-state=""
                     data-testid="card"
                     type="button"
@@ -1085,7 +1094,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                       >
                         <img
                           alt="Hello World LP"
-                          class="h-full w-full object-cover"
+                          class="h-full w-full object-cover transition-transform duration-500 [transition-timing-function:cubic-bezier(0.25,1,0.5,1)] group-hover/card:scale-110 group-focus-visible/card:scale-110 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
                           decoding="async"
                           loading="lazy"
                           src="https://img/debut.jpg"
@@ -1137,7 +1146,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                       class="min-w-0"
                     >
                       <div
-                        class="text-foreground truncate text-sm font-bold"
+                        class="text-foreground group-hover/card:text-primary truncate text-sm font-bold transition-colors duration-300"
                         data-testid="card-title"
                       >
                         Hello World LP
@@ -1164,7 +1173,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
           class="mb-4 flex flex-row items-center justify-start"
         >
           <button
-            class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center top-2 px-2 left-1"
+            class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-10 justify-center top-2 px-2 left-1"
             data-headlessui-state=""
             data-testid="sidebar-toggle-right"
             type="button"
@@ -1252,35 +1261,35 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
       </div>
     </div>
     <div
-      class="w-full select-none"
+      class="flex w-full flex-row items-center gap-3 select-none"
     >
+      <span
+        class="text-foreground-secondary min-w-[38px] text-right text-[11px] font-medium tabular-nums"
+      >
+        0:00
+      </span>
       <div
         aria-disabled="false"
-        class="relative h-4 w-full cursor-pointer"
+        class="group/seek relative flex h-6 flex-1 items-center outline-none cursor-pointer"
       >
         <div
-          class="absolute right-0 left-0 z-10 flex h-full flex-row items-center justify-between px-2 pt-0.5 text-xs leading-none"
-        >
-          <span
-            class="text-foreground tabular-nums"
-          >
-            0:00
-          </span>
-          <span
-            class="text-foreground tabular-nums"
-          >
-            0:00
-          </span>
-        </div>
-        <div
-          class="border-border bg-background-secondary absolute inset-0 border-t-(length:--border-width)"
+          class="relative h-1 w-full rounded-full bg-white/15 transition-[height,filter,box-shadow] duration-200 ease-out group-hover/seek:h-1.5 motion-reduce:transition-none"
         >
           <div
-            class="bg-primary h-full transition-none"
+            class="group-hover/seek:bg-primary h-full rounded-full bg-white transition-[width,background-color] duration-300 ease-out motion-reduce:transition-none"
             style="width: 0%;"
           />
         </div>
+        <div
+          class="pointer-events-none absolute top-1/2 z-20 size-3 -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full bg-white opacity-0 shadow-md transition-[opacity,transform,left] duration-300 ease-out group-hover/seek:scale-100 group-hover/seek:opacity-100 motion-reduce:transition-none"
+          style="left: 0%;"
+        />
       </div>
+      <span
+        class="text-foreground-secondary min-w-[38px] text-left text-[11px] font-medium tabular-nums"
+      >
+        0:00
+      </span>
     </div>
     <footer
       class="bg-background-secondary border-border flex h-16 items-center border-t-(length:--border-width) px-4"
@@ -1292,10 +1301,10 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
           class="min-w-0"
         >
           <div
-            class="flex min-w-0 items-center gap-3"
+            class="group/now-playing flex min-w-0 items-center gap-3"
           >
             <div
-              class="border-border bg-background-secondary size-12 shrink-0 overflow-hidden rounded-md border-(length:--border-width)"
+              class="border-border bg-background-secondary group-hover/now-playing:shadow-shadow size-12 shrink-0 overflow-hidden rounded-md border-(length:--border-width) transition-[box-shadow,transform] duration-150 ease-out group-hover/now-playing:-translate-y-0.5 motion-reduce:transition-none motion-reduce:group-hover/now-playing:translate-y-0"
             >
               <div
                 class="text-foreground-secondary flex size-full items-center justify-center"
@@ -1331,12 +1340,14 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               <div
                 class="text-foreground truncate text-sm font-bold"
                 data-testid="now-playing-title"
+                title="No track playing"
               >
                 No track playing
               </div>
               <div
                 class="text-foreground-secondary truncate text-xs"
                 data-testid="player-now-playing-artist"
+                title=""
               />
             </div>
           </div>
@@ -1349,14 +1360,14 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
           >
             <div>
               <button
-                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
                 data-headlessui-state=""
                 data-testid="player-shuffle-button"
                 type="button"
               >
                 <svg
                   aria-hidden="true"
-                  class="lucide lucide-shuffle"
+                  class="lucide lucide-shuffle transition-transform duration-150 group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                   fill="none"
                   height="16"
                   stroke="currentColor"
@@ -1386,13 +1397,13 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               </button>
             </div>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center group"
               data-headlessui-state=""
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-skip-back"
+                class="lucide lucide-skip-back transition-transform duration-150 group-hover:-translate-x-0.5 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
                 fill="none"
                 height="16"
                 stroke="currentColor"
@@ -1412,14 +1423,14 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               </svg>
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 justify-center group size-11 hover:scale-105 active:scale-95 motion-reduce:hover:scale-100 motion-reduce:active:scale-100"
               data-headlessui-state=""
               data-testid="player-play-button"
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-play"
+                class="lucide lucide-play translate-x-px transition-transform duration-150 group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                 fill="none"
                 height="16"
                 stroke="currentColor"
@@ -1436,13 +1447,13 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               </svg>
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center group"
               data-headlessui-state=""
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-skip-forward"
+                class="lucide lucide-skip-forward transition-transform duration-150 group-hover:translate-x-0.5 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
                 fill="none"
                 height="16"
                 stroke="currentColor"
@@ -1463,7 +1474,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
             </button>
             <div>
               <button
-                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
                 data-headlessui-state=""
                 data-testid="player-repeat-button"
                 type="button"
@@ -1496,22 +1507,98 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                 </svg>
               </button>
             </div>
+            <div>
+              <button
+                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
+                data-headlessui-state=""
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-sliders-horizontal"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="21"
+                    x2="14"
+                    y1="4"
+                    y2="4"
+                  />
+                  <line
+                    x1="10"
+                    x2="3"
+                    y1="4"
+                    y2="4"
+                  />
+                  <line
+                    x1="21"
+                    x2="12"
+                    y1="12"
+                    y2="12"
+                  />
+                  <line
+                    x1="8"
+                    x2="3"
+                    y1="12"
+                    y2="12"
+                  />
+                  <line
+                    x1="21"
+                    x2="16"
+                    y1="20"
+                    y2="20"
+                  />
+                  <line
+                    x1="12"
+                    x2="3"
+                    y1="20"
+                    y2="20"
+                  />
+                  <line
+                    x1="14"
+                    x2="14"
+                    y1="2"
+                    y2="6"
+                  />
+                  <line
+                    x1="8"
+                    x2="8"
+                    y1="10"
+                    y2="14"
+                  />
+                  <line
+                    x1="16"
+                    x2="16"
+                    y1="18"
+                    y2="22"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
         <div
           class="justify-self-end"
         >
           <div
-            class="flex items-center gap-2"
+            class="group/volume flex items-center gap-2"
           >
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center group"
               data-headlessui-state=""
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-volume2 lucide-volume-2"
+                class="lucide lucide-volume2 lucide-volume-2 transition-transform duration-150 group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                 fill="none"
                 height="16"
                 stroke="currentColor"
@@ -1534,7 +1621,7 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
               </svg>
             </button>
             <div
-              class="w-24"
+              class="w-24 transition-[opacity,filter] duration-150 group-hover/volume:brightness-110 motion-reduce:transition-none"
               data-testid="player-volume-slider"
             >
               <div
@@ -1550,11 +1637,11 @@ exports[`Artist view > with bio provider > (Snapshot) renders the artist view 1`
                       class="border-border bg-background-input relative h-3 w-full rounded-md border-(length:--border-width)"
                     >
                       <div
-                        class="bg-primary absolute top-0 left-0 h-full rounded-l"
+                        class="bg-primary absolute top-0 left-0 h-full rounded-l transition-[width] duration-150 ease-out"
                         style="width: 100%;"
                       />
                       <div
-                        class="border-border absolute top-1/2 -ml-2 h-5 w-5 -translate-y-1/2 rounded-full border-(length:--border-width) bg-white"
+                        class="border-border absolute top-1/2 -ml-2 h-5 w-5 -translate-y-1/2 rounded-full border-(length:--border-width) bg-white transition-[left] duration-150 ease-out"
                         style="left: 100%;"
                       />
                     </div>
@@ -1685,7 +1772,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
             class="flex flex-row items-center gap-2"
           >
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-8 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-8 justify-center"
               data-headlessui-state=""
               type="button"
             >
@@ -1708,7 +1795,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               </svg>
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-8 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-8 justify-center"
               data-disabled=""
               data-headlessui-state="disabled"
               disabled=""
@@ -1738,7 +1825,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
           class="flex w-full flex-col gap-2"
         >
           <input
-            class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none bg-background rounded-md border-(length:--border-width) h-8"
+            class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none bg-background rounded-md border-(length:--border-width) h-8"
             data-headlessui-state=""
             data-testid="search-box"
             id="input-:r2m:"
@@ -1823,7 +1910,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
           class="mb-4 flex flex-row items-center justify-end"
         >
           <button
-            class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center top-2 px-2 right-1"
+            class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-10 justify-center top-2 px-2 right-1"
             data-headlessui-state=""
             data-testid="sidebar-toggle-left"
             type="button"
@@ -1869,11 +1956,11 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -1909,11 +1996,11 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -1953,11 +2040,11 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -2000,11 +2087,11 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -2042,11 +2129,11 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -2091,11 +2178,11 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               >
                 <div>
                   <div
-                    class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) hover:bg-background-secondary border-transparent"
+                    class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-background-secondary hover:shadow-shadow border-transparent"
                     data-testid="sidebar-navigation-item"
                   >
                     <div
-                      class="flex size-8 shrink-0 items-center justify-center"
+                      class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                     >
                       <svg
                         aria-hidden="true"
@@ -2144,12 +2231,13 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
             </div>
             <div>
               <div
-                class="flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) cursor-pointer hover:bg-background-secondary border-transparent"
+                class="feedback-surface group/sidebar-item flex w-full items-center overflow-hidden rounded-md border-(length:--border-width) transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] active:shadow-none motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer hover:bg-background-secondary hover:shadow-shadow border-transparent"
                 data-testid="sidebar-navigation-item"
                 role="button"
+                tabindex="0"
               >
                 <div
-                  class="flex size-8 shrink-0 items-center justify-center"
+                  class="flex size-8 shrink-0 items-center justify-center transition-transform duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] group-hover/sidebar-item:scale-110 motion-reduce:transition-none motion-reduce:group-hover/sidebar-item:scale-100"
                 >
                   <svg
                     aria-hidden="true"
@@ -2214,14 +2302,14 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                 >
                   <button
                     aria-label="Add to favorites"
-                    class="inline-flex cursor-pointer items-center whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground size-10 justify-center bg-background border-border absolute top-4 right-4 z-10 rounded-md border-(length:--border-width)"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center group/favorite bg-background border-border absolute top-4 right-4 z-10 rounded-md border-(length:--border-width)"
                     data-headlessui-state=""
                     data-testid="artist-favorite-button"
                     type="button"
                   >
                     <svg
                       aria-hidden="true"
-                      class="lucide lucide-heart transition-colors text-foreground-secondary hover:text-foreground"
+                      class="lucide lucide-heart transition-[color,fill,transform,filter] duration-150 ease-out group-hover/favorite:scale-110 group-active/favorite:scale-95 motion-reduce:transition-none motion-reduce:group-hover/favorite:scale-100 motion-reduce:group-active/favorite:scale-100 text-foreground-secondary hover:text-foreground"
                       fill="none"
                       height="24"
                       stroke="currentColor"
@@ -2499,7 +2587,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                         >
                           <div>
                             <button
-                              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center"
+                              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-10 justify-center"
                               data-headlessui-state=""
                               data-testid="play-all-button"
                               type="button"
@@ -2525,7 +2613,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                           </div>
                           <div>
                             <button
-                              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y bg-background text-foreground border-(length:--border-width) hover:shadow-none size-10 justify-center"
+                              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y bg-background text-foreground border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-10 justify-center"
                               data-headlessui-state=""
                               data-testid="add-all-to-queue-button"
                               type="button"
@@ -2662,7 +2750,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                                   aria-describedby=""
                                   aria-disabled="true"
                                   aria-roledescription="sortable"
-                                  class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                                  class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                                   data-testid="track-row"
                                   role="button"
                                   style="height: 42px;"
@@ -2673,13 +2761,13 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                                   >
                                     <button
                                       aria-label="Add to favorites"
-                                      class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center group/favorite"
                                       data-headlessui-state=""
                                       type="button"
                                     >
                                       <svg
                                         aria-hidden="true"
-                                        class="lucide lucide-heart transition-colors text-foreground-secondary hover:text-foreground"
+                                        class="lucide lucide-heart transition-[color,fill,transform,filter] duration-150 ease-out group-hover/favorite:scale-110 group-active/favorite:scale-95 motion-reduce:transition-none motion-reduce:group-hover/favorite:scale-100 motion-reduce:group-active/favorite:scale-100 text-foreground-secondary hover:text-foreground"
                                         fill="none"
                                         height="16"
                                         stroke="currentColor"
@@ -2702,17 +2790,25 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                                     <div
                                       class="flex w-full justify-center"
                                     >
-                                      <img
-                                        class="w-10 min-w-10"
-                                        src="https://img/track.jpg"
-                                      />
+                                      <div
+                                        class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                                      >
+                                        <img
+                                          alt=""
+                                          class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                                          src="https://img/track.jpg"
+                                        />
+                                        <div
+                                          class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                                        />
+                                      </div>
                                     </div>
                                   </td>
                                   <td
                                     class="cursor-default truncate px-2"
                                   >
                                     <div
-                                      class="truncate"
+                                      class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                                     >
                                       Deadmau5
                                     </div>
@@ -2724,7 +2820,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                                       class="flex items-center justify-between gap-2"
                                     >
                                       <button
-                                        class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                                        class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                                       >
                                         Strobe
                                       </button>
@@ -2733,7 +2829,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                                       >
                                         <button
                                           aria-label="Add to queue"
-                                          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center opacity-0 transition-none group-hover:opacity-100"
+                                          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center translate-x-1 opacity-0 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:translate-x-0 group-focus-within/track-row:opacity-100 group-hover/track-row:translate-x-0 group-hover/track-row:opacity-100 motion-reduce:transition-none"
                                           data-headlessui-state=""
                                           data-testid="add-to-queue-button"
                                           type="button"
@@ -2763,7 +2859,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                                           aria-expanded="false"
                                           aria-haspopup="menu"
                                           aria-label="Track options"
-                                          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center opacity-0 transition-none group-hover:opacity-100"
+                                          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center translate-x-1 opacity-0 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:translate-x-0 group-focus-within/track-row:opacity-100 group-hover/track-row:translate-x-0 group-hover/track-row:opacity-100 motion-reduce:transition-none"
                                           data-headlessui-state=""
                                           data-state="closed"
                                           data-testid="track-context-menu-button"
@@ -2851,7 +2947,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                   role="grid"
                 >
                   <button
-                    class="cursor-pointer rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-auto flex w-42 flex-col items-stretch gap-2 p-2 text-left"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer overflow-hidden rounded-md whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-auto group/card flex w-42 flex-col items-stretch gap-2 p-2 text-left transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1.5 focus-visible:-translate-y-1.5"
                     data-headlessui-state=""
                     data-testid="card"
                     type="button"
@@ -2864,7 +2960,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                       >
                         <img
                           alt="mau5trap selects"
-                          class="h-full w-full object-cover"
+                          class="h-full w-full object-cover transition-transform duration-500 [transition-timing-function:cubic-bezier(0.25,1,0.5,1)] group-hover/card:scale-110 group-focus-visible/card:scale-110 motion-reduce:transition-none motion-reduce:group-hover/card:scale-100 motion-reduce:group-focus-visible/card:scale-100"
                           decoding="async"
                           loading="lazy"
                           src="https://img/playlist1.jpg"
@@ -2916,7 +3012,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                       class="min-w-0"
                     >
                       <div
-                        class="text-foreground truncate text-sm font-bold"
+                        class="text-foreground group-hover/card:text-primary truncate text-sm font-bold transition-colors duration-300"
                         data-testid="card-title"
                       >
                         mau5trap selects
@@ -2938,7 +3034,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
           class="mb-4 flex flex-row items-center justify-start"
         >
           <button
-            class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center top-2 px-2 left-1"
+            class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-10 justify-center top-2 px-2 left-1"
             data-headlessui-state=""
             data-testid="sidebar-toggle-right"
             type="button"
@@ -3026,35 +3122,35 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
       </div>
     </div>
     <div
-      class="w-full select-none"
+      class="flex w-full flex-row items-center gap-3 select-none"
     >
+      <span
+        class="text-foreground-secondary min-w-[38px] text-right text-[11px] font-medium tabular-nums"
+      >
+        0:00
+      </span>
       <div
         aria-disabled="false"
-        class="relative h-4 w-full cursor-pointer"
+        class="group/seek relative flex h-6 flex-1 items-center outline-none cursor-pointer"
       >
         <div
-          class="absolute right-0 left-0 z-10 flex h-full flex-row items-center justify-between px-2 pt-0.5 text-xs leading-none"
-        >
-          <span
-            class="text-foreground tabular-nums"
-          >
-            0:00
-          </span>
-          <span
-            class="text-foreground tabular-nums"
-          >
-            0:00
-          </span>
-        </div>
-        <div
-          class="border-border bg-background-secondary absolute inset-0 border-t-(length:--border-width)"
+          class="relative h-1 w-full rounded-full bg-white/15 transition-[height,filter,box-shadow] duration-200 ease-out group-hover/seek:h-1.5 motion-reduce:transition-none"
         >
           <div
-            class="bg-primary h-full transition-none"
+            class="group-hover/seek:bg-primary h-full rounded-full bg-white transition-[width,background-color] duration-300 ease-out motion-reduce:transition-none"
             style="width: 0%;"
           />
         </div>
+        <div
+          class="pointer-events-none absolute top-1/2 z-20 size-3 -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full bg-white opacity-0 shadow-md transition-[opacity,transform,left] duration-300 ease-out group-hover/seek:scale-100 group-hover/seek:opacity-100 motion-reduce:transition-none"
+          style="left: 0%;"
+        />
       </div>
+      <span
+        class="text-foreground-secondary min-w-[38px] text-left text-[11px] font-medium tabular-nums"
+      >
+        0:00
+      </span>
     </div>
     <footer
       class="bg-background-secondary border-border flex h-16 items-center border-t-(length:--border-width) px-4"
@@ -3066,10 +3162,10 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
           class="min-w-0"
         >
           <div
-            class="flex min-w-0 items-center gap-3"
+            class="group/now-playing flex min-w-0 items-center gap-3"
           >
             <div
-              class="border-border bg-background-secondary size-12 shrink-0 overflow-hidden rounded-md border-(length:--border-width)"
+              class="border-border bg-background-secondary group-hover/now-playing:shadow-shadow size-12 shrink-0 overflow-hidden rounded-md border-(length:--border-width) transition-[box-shadow,transform] duration-150 ease-out group-hover/now-playing:-translate-y-0.5 motion-reduce:transition-none motion-reduce:group-hover/now-playing:translate-y-0"
             >
               <div
                 class="text-foreground-secondary flex size-full items-center justify-center"
@@ -3105,12 +3201,14 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               <div
                 class="text-foreground truncate text-sm font-bold"
                 data-testid="now-playing-title"
+                title="No track playing"
               >
                 No track playing
               </div>
               <div
                 class="text-foreground-secondary truncate text-xs"
                 data-testid="player-now-playing-artist"
+                title=""
               />
             </div>
           </div>
@@ -3123,14 +3221,14 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
           >
             <div>
               <button
-                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
                 data-headlessui-state=""
                 data-testid="player-shuffle-button"
                 type="button"
               >
                 <svg
                   aria-hidden="true"
-                  class="lucide lucide-shuffle"
+                  class="lucide lucide-shuffle transition-transform duration-150 group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                   fill="none"
                   height="16"
                   stroke="currentColor"
@@ -3160,13 +3258,13 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               </button>
             </div>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center group"
               data-headlessui-state=""
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-skip-back"
+                class="lucide lucide-skip-back transition-transform duration-150 group-hover:-translate-x-0.5 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
                 fill="none"
                 height="16"
                 stroke="currentColor"
@@ -3186,14 +3284,14 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               </svg>
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 justify-center group size-11 hover:scale-105 active:scale-95 motion-reduce:hover:scale-100 motion-reduce:active:scale-100"
               data-headlessui-state=""
               data-testid="player-play-button"
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-play"
+                class="lucide lucide-play translate-x-px transition-transform duration-150 group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                 fill="none"
                 height="16"
                 stroke="currentColor"
@@ -3210,13 +3308,13 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               </svg>
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center group"
               data-headlessui-state=""
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-skip-forward"
+                class="lucide lucide-skip-forward transition-transform duration-150 group-hover:translate-x-0.5 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
                 fill="none"
                 height="16"
                 stroke="currentColor"
@@ -3237,7 +3335,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
             </button>
             <div>
               <button
-                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
                 data-headlessui-state=""
                 data-testid="player-repeat-button"
                 type="button"
@@ -3270,22 +3368,98 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                 </svg>
               </button>
             </div>
+            <div>
+              <button
+                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center"
+                data-headlessui-state=""
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-sliders-horizontal"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="21"
+                    x2="14"
+                    y1="4"
+                    y2="4"
+                  />
+                  <line
+                    x1="10"
+                    x2="3"
+                    y1="4"
+                    y2="4"
+                  />
+                  <line
+                    x1="21"
+                    x2="12"
+                    y1="12"
+                    y2="12"
+                  />
+                  <line
+                    x1="8"
+                    x2="3"
+                    y1="12"
+                    y2="12"
+                  />
+                  <line
+                    x1="21"
+                    x2="16"
+                    y1="20"
+                    y2="20"
+                  />
+                  <line
+                    x1="12"
+                    x2="3"
+                    y1="20"
+                    y2="20"
+                  />
+                  <line
+                    x1="14"
+                    x2="14"
+                    y1="2"
+                    y2="6"
+                  />
+                  <line
+                    x1="8"
+                    x2="8"
+                    y1="10"
+                    y2="14"
+                  />
+                  <line
+                    x1="16"
+                    x2="16"
+                    y1="18"
+                    y2="22"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
         <div
           class="justify-self-end"
         >
           <div
-            class="flex items-center gap-2"
+            class="group/volume flex items-center gap-2"
           >
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-10 justify-center"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-10 justify-center group"
               data-headlessui-state=""
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-volume2 lucide-volume-2"
+                class="lucide lucide-volume2 lucide-volume-2 transition-transform duration-150 group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                 fill="none"
                 height="16"
                 stroke="currentColor"
@@ -3308,7 +3482,7 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
               </svg>
             </button>
             <div
-              class="w-24"
+              class="w-24 transition-[opacity,filter] duration-150 group-hover/volume:brightness-110 motion-reduce:transition-none"
               data-testid="player-volume-slider"
             >
               <div
@@ -3324,11 +3498,11 @@ exports[`Artist view > with social stats provider > (Snapshot) renders the artis
                       class="border-border bg-background-input relative h-3 w-full rounded-md border-(length:--border-width)"
                     >
                       <div
-                        class="bg-primary absolute top-0 left-0 h-full rounded-l"
+                        class="bg-primary absolute top-0 left-0 h-full rounded-l transition-[width] duration-150 ease-out"
                         style="width: 100%;"
                       />
                       <div
-                        class="border-border absolute top-1/2 -ml-2 h-5 w-5 -translate-y-1/2 rounded-full border-(length:--border-width) bg-white"
+                        class="border-border absolute top-1/2 -ml-2 h-5 w-5 -translate-y-1/2 rounded-full border-(length:--border-width) bg-white transition-[left] duration-150 ease-out"
                         style="left: 100%;"
                       />
                     </div>

@@ -1,0 +1,208 @@
+/* Tema Fluent - Inspirado en el diseño moderno de Windows 11 (Fluent UI) */
+
+:root[data-theme-id='nuclear:fluent'] {
+  --background: rgba(243, 243, 243, 0.72);
+  --background-secondary: rgba(255, 255, 255, 0.45);
+  --background-input: rgba(255, 255, 255, 0.6);
+  --foreground: oklch(0% 0 0);
+  --foreground-secondary: oklch(0.4 0.05 240);
+  --primary: oklch(0.6 0.18 215); /* Azul Fluent */
+  --border: rgba(0, 0, 0, 0.06);
+  --border-width: 1px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --shadow-x: 0px;
+  --shadow-y: 0px;
+  --shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme-id='nuclear:fluent'][data-theme='dark'] {
+  --background: rgba(20, 20, 20, 0.72);
+  --background-secondary: rgba(30, 30, 30, 0.48);
+  --background-input: rgba(40, 40, 40, 0.55);
+  --foreground: oklch(96% 0.005 240);
+  --foreground-secondary: oklch(80% 0.01 240);
+  --foreground-input: oklch(98% 0 0);
+  --primary: oklch(0.64 0.16 212); /* Azul Windows 11 Premium */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-width: 1px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --shadow-x: 0px;
+  --shadow-y: 0px;
+  --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* --- Efectos Avanzados de Interfaz (Acrílico, Mica y Mesh Gradient) --- */
+
+/* 1. Fondo Mesh Gradient Aura en el Body (Mica Effect) */
+:root[data-theme-id='nuclear:fluent'][data-theme='dark'] body {
+  background: 
+    radial-gradient(circle at 100% 100%, oklch(0.25 0.06 215) 0%, transparent 55%),
+    radial-gradient(circle at 0% 0%, oklch(0.20 0.07 275) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, oklch(0.18 0.05 145) 0%, transparent 45%),
+    oklch(0.12 0.01 240) !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] body {
+  background: 
+    radial-gradient(circle at 100% 100%, oklch(0.92 0.04 215) 0%, transparent 60%),
+    radial-gradient(circle at 0% 0%, oklch(0.94 0.03 275) 0%, transparent 50%),
+    oklch(0.96 0.01 240) !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+/* 2. Filtro de Desenfoque Acrílico en Paneles Clave */
+:root[data-theme-id='nuclear:fluent'] footer,
+:root[data-theme-id='nuclear:fluent'] header,
+:root[data-theme-id='nuclear:fluent'] [data-testid="player-workspace-main"],
+:root[data-theme-id='nuclear:fluent'] div:has(> [data-testid^="sidebar-toggle"]),
+:root[data-theme-id='nuclear:fluent'] [data-testid="sidebar-navigation"] {
+  backdrop-filter: blur(28px) saturate(145%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(145%) !important;
+}
+
+/* 3. Ajuste de Bordes y Sombras en Contenedores */
+:root[data-theme-id='nuclear:fluent'] footer {
+  border-top: 1px solid var(--border) !important;
+  box-shadow: 0 -8px 32px 0 rgba(0, 0, 0, 0.25) !important;
+  background-color: var(--background-secondary) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] header {
+  border-bottom: 1px solid var(--border) !important;
+  background-color: var(--background-secondary) !important;
+}
+
+/* Sidebar Contenedores Flotantes */
+:root[data-theme-id='nuclear:fluent'] div:has(> [data-testid^="sidebar-toggle"]) {
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border) !important;
+}
+
+/* Main Workspace */
+:root[data-theme-id='nuclear:fluent'] [data-testid="player-workspace-main"] {
+  background-color: rgba(15, 15, 15, 0.4) !important;
+}
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] [data-testid="player-workspace-main"] {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* 4. Estilos de Botones y Superficies Interactivas (Fluent Control Style) */
+:root[data-theme-id='nuclear:fluent'] button,
+:root[data-theme-id='nuclear:fluent'] [class*="feedback-surface"] {
+  box-shadow: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  border-radius: var(--radius-sm) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] button,
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] [class*="feedback-surface"] {
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  background-color: rgba(0, 0, 0, 0.02) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] button:hover,
+:root[data-theme-id='nuclear:fluent'] [class*="feedback-surface"]:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  transform: translateY(-1px) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] button:hover,
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] [class*="feedback-surface"]:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] button:active,
+:root[data-theme-id='nuclear:fluent'] [class*="feedback-surface"]:active {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  transform: translateY(0.5px) !important;
+}
+
+/* 5. Modales, Diálogos y Menús Flotantes (Flyout Windows) */
+:root[data-theme-id='nuclear:fluent'] [role="dialog"],
+:root[data-theme-id='nuclear:fluent'] [data-testid="equalizer-modal"],
+:root[data-theme-id='nuclear:fluent'] [data-testid="settings-modal"] {
+  backdrop-filter: blur(32px) saturate(150%) !important;
+  background-color: rgba(25, 25, 25, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] [role="dialog"] {
+  background-color: rgba(255, 255, 255, 0.82) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 6. Inputs de Texto y Cajas de Búsqueda */
+:root[data-theme-id='nuclear:fluent'] input[type="text"],
+:root[data-theme-id='nuclear:fluent'] input[type="search"] {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: var(--radius-sm) !important;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] input[type="text"],
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] input[type="search"] {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] input[type="text"]:focus,
+:root[data-theme-id='nuclear:fluent'] input[type="search"]:focus {
+  border-bottom-color: var(--primary) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] input[type="text"]:focus,
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] input[type="search"]:focus {
+  border-bottom-color: var(--primary) !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+/* 7. Scrollbars delgados y redondeados */
+:root[data-theme-id='nuclear:fluent'] ::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] ::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* 8. Tarjetas de Música y Filas de Listas (Fluent Grid/Row Styles) */
+:root[data-theme-id='nuclear:fluent'] [data-testid="card"] {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: none !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] [data-testid="card"]:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  transform: translateY(-2px) !important;
+}

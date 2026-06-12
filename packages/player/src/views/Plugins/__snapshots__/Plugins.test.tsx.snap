@@ -40,7 +40,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
       >
         <button
           aria-label="Close"
-          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center absolute top-3 right-3"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center absolute top-3 right-3"
           data-headlessui-state=""
           data-testid="dialog-x-close"
           type="button"
@@ -73,7 +73,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
             class="flex flex-col gap-1"
           >
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-general"
               type="button"
@@ -113,7 +113,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
               General
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-shortcuts"
               type="button"
@@ -168,7 +168,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
               Key Shortcuts
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state="hover"
               data-hover=""
               data-testid="settings-tab-plugins"
@@ -203,7 +203,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
               Plugins
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-themes"
               type="button"
@@ -254,7 +254,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
               Themes
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-logs"
               type="button"
@@ -290,7 +290,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
               Logs
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-whats-new"
               type="button"
@@ -339,7 +339,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
               >
                 <div>
                   <button
-                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -361,7 +361,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
                 </div>
                 <div>
                   <button
-                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -383,7 +383,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
                 </div>
                 <div>
                   <button
-                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -405,7 +405,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
                 </div>
                 <div>
                   <button
-                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -469,7 +469,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
                     <button
                       aria-controls="headlessui-tabs-panel-:rg:"
                       aria-selected="true"
-                      class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2"
                       data-headlessui-state=""
                       data-selected=""
                       id="headlessui-tabs-tab-:rc:"
@@ -482,7 +482,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
                     <button
                       aria-controls="headlessui-tabs-panel-:ri:"
                       aria-selected="false"
-                      class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2"
+                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
                       data-headlessui-state=""
                       id="headlessui-tabs-tab-:re:"
                       role="tab"
@@ -519,7 +519,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
                               class="flex items-center"
                             >
                               <button
-                                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-9 px-3"
+                                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-9 px-3"
                                 data-headlessui-state=""
                                 type="button"
                               >
@@ -576,7 +576,7 @@ exports[`Plugins view > (Snapshot) renders the plugins view 1`] = `
                               </div>
                               <div>
                                 <button
-                                  class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+                                  class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2"
                                   data-headlessui-state=""
                                   data-testid="installed-plugins-empty-state-action"
                                   type="button"

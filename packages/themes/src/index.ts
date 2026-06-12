@@ -16,6 +16,7 @@ import './basic/aurora.css';
 import './basic/ember.css';
 import './basic/lagoon.css';
 import './basic/arctic-moss.css';
+import './basic/fluent.css';
 
 export type BasicThemeMeta = {
   id: string;
@@ -72,6 +73,16 @@ const BUILT_INS: BasicThemeMeta[] = [
       'oklch(0.97 0.008 200)',
       'oklch(0.58 0.09 175)',
       'oklch(0.20 0.02 175)',
+    ],
+  },
+  {
+    id: 'nuclear:fluent',
+    name: 'Fluent',
+    palette: [
+      'oklch(0.65 0.18 210)',
+      'oklch(0.95 0.01 240)',
+      'oklch(0.28 0.02 240)',
+      'oklch(0.16 0.02 240)',
     ],
   },
 ];

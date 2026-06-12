@@ -40,7 +40,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
       >
         <button
           aria-label="Close"
-          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center absolute top-3 right-3"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center absolute top-3 right-3"
           data-headlessui-state=""
           data-testid="dialog-x-close"
           type="button"
@@ -73,7 +73,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
             class="flex flex-col gap-1"
           >
             <button
-              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-general"
               type="button"
@@ -113,7 +113,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
               General
             </button>
             <button
-              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-shortcuts"
               type="button"
@@ -168,7 +168,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
               Key Shortcuts
             </button>
             <button
-              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-plugins"
               type="button"
@@ -202,7 +202,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
               Plugins
             </button>
             <button
-              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state="hover"
               data-hover=""
               data-testid="settings-tab-themes"
@@ -254,7 +254,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
               Themes
             </button>
             <button
-              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-logs"
               type="button"
@@ -290,7 +290,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
               Logs
             </button>
             <button
-              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-whats-new"
               type="button"
@@ -339,7 +339,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
               >
                 <div>
                   <button
-                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -361,7 +361,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                 </div>
                 <div>
                   <button
-                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -383,7 +383,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                 </div>
                 <div>
                   <button
-                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -405,7 +405,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                 </div>
                 <div>
                   <button
-                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -469,7 +469,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                     <button
                       aria-controls="headlessui-tabs-panel-:rg:"
                       aria-selected="true"
-                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2"
+                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2"
                       data-headlessui-state=""
                       data-selected=""
                       id="headlessui-tabs-tab-:rc:"
@@ -482,7 +482,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                     <button
                       aria-controls="headlessui-tabs-panel-:rp:"
                       aria-selected="false"
-                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color,opacity] duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
+                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2"
                       data-headlessui-state=""
                       id="headlessui-tabs-tab-:re:"
                       role="tab"
@@ -536,7 +536,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                                   >
                                     <button
                                       aria-pressed="true"
-                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none bg-primary"
+                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none bg-primary"
                                       data-headlessui-state=""
                                       type="button"
                                     >
@@ -572,7 +572,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                                     </button>
                                     <button
                                       aria-pressed="false"
-                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto bg-background-secondary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none"
+                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto bg-background-secondary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none"
                                       data-headlessui-state=""
                                       type="button"
                                     >
@@ -608,7 +608,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                                     </button>
                                     <button
                                       aria-pressed="false"
-                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto bg-background-secondary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none"
+                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto bg-background-secondary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none"
                                       data-headlessui-state=""
                                       type="button"
                                     >
@@ -644,7 +644,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                                     </button>
                                     <button
                                       aria-pressed="false"
-                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto bg-background-secondary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none"
+                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto bg-background-secondary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none"
                                       data-headlessui-state=""
                                       type="button"
                                     >
@@ -680,7 +680,7 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                                     </button>
                                     <button
                                       aria-pressed="false"
-                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-150 ease-out outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto bg-background-secondary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none"
+                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto bg-background-secondary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none"
                                       data-headlessui-state=""
                                       type="button"
                                     >
@@ -711,6 +711,42 @@ exports[`Themes view > (Snapshot) renders the themes view 1`] = `
                                           aria-hidden="true"
                                           class="ring-border inline-block size-5 rounded-full ring-2"
                                           style="background-color: oklch(0.2 0.02 175);"
+                                        />
+                                      </div>
+                                    </button>
+                                    <button
+                                      aria-pressed="false"
+                                      class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y cursor-pointer items-center overflow-hidden whitespace-nowrap duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-auto bg-background-secondary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y flex flex-col justify-between gap-2 rounded-md border-(length:--border-width) px-4 py-2 transition hover:shadow-none"
+                                      data-headlessui-state=""
+                                      type="button"
+                                    >
+                                      <span
+                                        class="text-foreground text-left text-base font-bold"
+                                      >
+                                        Fluent
+                                      </span>
+                                      <div
+                                        class="block"
+                                      >
+                                        <span
+                                          aria-hidden="true"
+                                          class="ring-border inline-block size-5 rounded-full ring-2"
+                                          style="background-color: oklch(0.65 0.18 210);"
+                                        />
+                                        <span
+                                          aria-hidden="true"
+                                          class="ring-border inline-block size-5 rounded-full ring-2"
+                                          style="background-color: oklch(0.95 0.01 240);"
+                                        />
+                                        <span
+                                          aria-hidden="true"
+                                          class="ring-border inline-block size-5 rounded-full ring-2"
+                                          style="background-color: oklch(0.28 0.02 240);"
+                                        />
+                                        <span
+                                          aria-hidden="true"
+                                          class="ring-border inline-block size-5 rounded-full ring-2"
+                                          style="background-color: oklch(0.16 0.02 240);"
                                         />
                                       </div>
                                     </button>

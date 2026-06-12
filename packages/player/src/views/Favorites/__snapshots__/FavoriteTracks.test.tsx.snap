@@ -130,7 +130,7 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
               >
                 <div>
                   <button
-                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none size-10 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-10 justify-center"
                     data-headlessui-state=""
                     data-testid="play-all-button"
                     type="button"
@@ -156,7 +156,7 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                 </div>
                 <div>
                   <button
-                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y bg-background text-foreground border-(length:--border-width) hover:shadow-none size-10 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y bg-background text-foreground border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 size-10 justify-center"
                     data-headlessui-state=""
                     data-testid="add-all-to-queue-button"
                     type="button"
@@ -184,16 +184,16 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                   </button>
                 </div>
                 <div
-                  class="ml-auto inline-flex w-full max-w-sm items-stretch"
+                  class="ml-auto inline-flex w-full max-w-sm items-stretch transition-[filter,transform] duration-150 ease-out motion-reduce:transition-none"
                 >
                   <div
                     class="flex w-full flex-col gap-2"
                   >
                     <div
-                      class="border-border inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2"
+                      class="border-border hover:border-foreground/60 inline-flex w-full items-stretch overflow-hidden rounded-md border-(length:--border-width) transition-[border-color,box-shadow] duration-150 ease-out has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-black has-[:focus-visible]:ring-offset-2 motion-reduce:transition-none"
                     >
                       <input
-                        class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-black focus-visible:outline-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+                        class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-black focus-visible:outline-none motion-reduce:transition-none bg-background-input h-9 text-sm rounded-l border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
                         data-headlessui-state=""
                         id="input-:r7:"
                         placeholder="Filter tracks"
@@ -334,7 +334,7 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                         aria-describedby=""
                         aria-disabled="true"
                         aria-roledescription="sortable"
-                        class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                        class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                         data-testid="track-row"
                         role="button"
                         style="height: 42px;"
@@ -345,13 +345,13 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                         >
                           <button
                             aria-label="Remove from favorites"
-                            class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                            class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center group/favorite text-accent-red"
                             data-headlessui-state=""
                             type="button"
                           >
                             <svg
                               aria-hidden="true"
-                              class="lucide lucide-heart transition-colors fill-accent-red text-accent-red"
+                              class="lucide lucide-heart transition-[color,fill,transform,filter] duration-150 ease-out group-hover/favorite:scale-110 group-active/favorite:scale-95 motion-reduce:transition-none motion-reduce:group-hover/favorite:scale-100 motion-reduce:group-active/favorite:scale-100 fill-accent-red text-accent-red drop-shadow-[0_0_8px_color-mix(in_oklch,var(--accent-red),transparent_45%)]"
                               fill="none"
                               height="16"
                               stroke="currentColor"
@@ -374,16 +374,24 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                           <div
                             class="flex w-full justify-center"
                           >
-                            <img
-                              class="w-10 min-w-10"
-                            />
+                            <div
+                              class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                            >
+                              <img
+                                alt=""
+                                class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                              />
+                              <div
+                                class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                              />
+                            </div>
                           </div>
                         </td>
                         <td
                           class="cursor-default truncate px-2"
                         >
                           <div
-                            class="truncate"
+                            class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                           >
                             Test Artist
                           </div>
@@ -395,7 +403,7 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                             class="flex items-center justify-between gap-2"
                           >
                             <button
-                              class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                              class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                             >
                               Track track-1
                             </button>
@@ -404,7 +412,7 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                             >
                               <button
                                 aria-label="Add to queue"
-                                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center opacity-0 transition-none group-hover:opacity-100"
+                                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center translate-x-1 opacity-0 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:translate-x-0 group-focus-within/track-row:opacity-100 group-hover/track-row:translate-x-0 group-hover/track-row:opacity-100 motion-reduce:transition-none"
                                 data-headlessui-state=""
                                 data-testid="add-to-queue-button"
                                 type="button"
@@ -434,7 +442,7 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                                 aria-expanded="false"
                                 aria-haspopup="menu"
                                 aria-label="Track options"
-                                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center opacity-0 transition-none group-hover:opacity-100"
+                                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center translate-x-1 opacity-0 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:translate-x-0 group-focus-within/track-row:opacity-100 group-hover/track-row:translate-x-0 group-hover/track-row:opacity-100 motion-reduce:transition-none"
                                 data-headlessui-state=""
                                 data-state="closed"
                                 data-testid="track-context-menu-button"
@@ -479,7 +487,7 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                         aria-describedby=""
                         aria-disabled="true"
                         aria-roledescription="sortable"
-                        class="border-border bg-background-secondary group border-b-(length:--border-width) select-none"
+                        class="border-border bg-background-secondary group group/track-row hover:bg-foreground/[0.04] focus-within:bg-foreground/[0.05] border-b-(length:--border-width) transition-[background-color,box-shadow,filter,transform] duration-150 ease-out outline-none select-none focus-within:shadow-[inset_3px_0_0_var(--primary)] hover:shadow-[inset_3px_0_0_var(--primary)] motion-reduce:transition-none hover:-translate-y-px"
                         data-testid="track-row"
                         role="button"
                         style="height: 42px;"
@@ -490,13 +498,13 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                         >
                           <button
                             aria-label="Remove from favorites"
-                            class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                            class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center group/favorite text-accent-red"
                             data-headlessui-state=""
                             type="button"
                           >
                             <svg
                               aria-hidden="true"
-                              class="lucide lucide-heart transition-colors fill-accent-red text-accent-red"
+                              class="lucide lucide-heart transition-[color,fill,transform,filter] duration-150 ease-out group-hover/favorite:scale-110 group-active/favorite:scale-95 motion-reduce:transition-none motion-reduce:group-hover/favorite:scale-100 motion-reduce:group-active/favorite:scale-100 fill-accent-red text-accent-red drop-shadow-[0_0_8px_color-mix(in_oklch,var(--accent-red),transparent_45%)]"
                               fill="none"
                               height="16"
                               stroke="currentColor"
@@ -519,16 +527,24 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                           <div
                             class="flex w-full justify-center"
                           >
-                            <img
-                              class="w-10 min-w-10"
-                            />
+                            <div
+                              class="border-border/60 bg-background relative size-10 min-w-10 overflow-hidden rounded-sm border"
+                            >
+                              <img
+                                alt=""
+                                class="size-full object-cover transition-[filter,transform] duration-200 ease-out group-focus-within/track-row:scale-105 group-focus-within/track-row:brightness-110 group-hover/track-row:scale-105 group-hover/track-row:brightness-110 motion-reduce:transition-none motion-reduce:group-focus-within/track-row:scale-100 motion-reduce:group-hover/track-row:scale-100"
+                              />
+                              <div
+                                class="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-white/20 transition-opacity duration-150 ring-inset group-focus-within/track-row:opacity-100 group-hover/track-row:opacity-100 motion-reduce:transition-none"
+                              />
+                            </div>
                           </div>
                         </td>
                         <td
                           class="cursor-default truncate px-2"
                         >
                           <div
-                            class="truncate"
+                            class="group-hover/track-row:text-foreground group-focus-within/track-row:text-foreground truncate transition-colors duration-150 motion-reduce:transition-none"
                           >
                             Test Artist
                           </div>
@@ -540,7 +556,7 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                             class="flex items-center justify-between gap-2"
                           >
                             <button
-                              class="min-w-0 flex-1 cursor-pointer truncate text-left hover:underline"
+                              class="hover:text-primary min-w-0 flex-1 cursor-pointer truncate rounded-sm text-left transition-[color,text-decoration-color] duration-150 hover:underline hover:decoration-current focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                             >
                               Track track-2
                             </button>
@@ -549,7 +565,7 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                             >
                               <button
                                 aria-label="Add to queue"
-                                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center opacity-0 transition-none group-hover:opacity-100"
+                                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center translate-x-1 opacity-0 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:translate-x-0 group-focus-within/track-row:opacity-100 group-hover/track-row:translate-x-0 group-hover/track-row:opacity-100 motion-reduce:transition-none"
                                 data-headlessui-state=""
                                 data-testid="add-to-queue-button"
                                 type="button"
@@ -579,7 +595,7 @@ exports[`FavoriteTracks view > (Snapshot) renders with tracks 1`] = `
                                 aria-expanded="false"
                                 aria-haspopup="menu"
                                 aria-label="Track options"
-                                class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center opacity-0 transition-none group-hover:opacity-100"
+                                class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center translate-x-1 opacity-0 transition-[opacity,transform,background-color] duration-150 ease-out group-focus-within/track-row:translate-x-0 group-focus-within/track-row:opacity-100 group-hover/track-row:translate-x-0 group-hover/track-row:opacity-100 motion-reduce:transition-none"
                                 data-headlessui-state=""
                                 data-state="closed"
                                 data-testid="track-context-menu-button"

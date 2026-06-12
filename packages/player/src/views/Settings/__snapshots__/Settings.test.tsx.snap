@@ -40,7 +40,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
       >
         <button
           aria-label="Close"
-          class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center absolute top-3 right-3"
+          class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center absolute top-3 right-3"
           data-headlessui-state=""
           data-testid="dialog-x-close"
           type="button"
@@ -73,7 +73,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
             class="flex flex-col gap-1"
           >
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-primary border-border shadow-shadow hover:translate-x-shadow-x hover:translate-y-shadow-y border-(length:--border-width) hover:shadow-none hover:brightness-105 active:brightness-95 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state="hover"
               data-hover=""
               data-testid="settings-tab-general"
@@ -114,7 +114,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
               General
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-shortcuts"
               type="button"
@@ -169,7 +169,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
               Key Shortcuts
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-plugins"
               type="button"
@@ -203,7 +203,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
               Plugins
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-themes"
               type="button"
@@ -254,7 +254,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
               Themes
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-logs"
               type="button"
@@ -290,7 +290,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
               Logs
             </button>
             <button
-              class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent h-10 px-4 py-2 justify-start gap-2"
+              class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 h-10 px-4 py-2 justify-start gap-2"
               data-headlessui-state=""
               data-testid="settings-tab-whats-new"
               type="button"
@@ -339,7 +339,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
               >
                 <div>
                   <button
-                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -361,7 +361,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                 </div>
                 <div>
                   <button
-                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -383,7 +383,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                 </div>
                 <div>
                   <button
-                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -405,7 +405,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                 </div>
                 <div>
                   <button
-                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 text-foreground bg-transparent size-8 justify-center"
+                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none text-foreground bg-transparent hover:-translate-y-0.5 hover:bg-black/5 active:bg-black/10 size-8 justify-center"
                     data-headlessui-state=""
                     type="button"
                   >
@@ -650,7 +650,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                                     data-testid="info-field-value"
                                   />
                                   <button
-                                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 border border-current bg-transparent hover:bg-black/10 size-8 justify-center"
+                                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none hover:shadow-shadow border border-current bg-transparent hover:-translate-y-0.5 hover:bg-black/10 size-8 justify-center"
                                     data-headlessui-state=""
                                     data-testid="info-field-copy-button"
                                     type="button"
@@ -704,7 +704,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                                     data-testid="info-field-value"
                                   />
                                   <button
-                                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 border border-current bg-transparent hover:bg-black/10 size-8 justify-center"
+                                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none hover:shadow-shadow border border-current bg-transparent hover:-translate-y-0.5 hover:bg-black/10 size-8 justify-center"
                                     data-headlessui-state=""
                                     data-testid="info-field-copy-button"
                                     type="button"
@@ -792,7 +792,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                                     http://127.0.0.1:8800/mcp
                                   </div>
                                   <button
-                                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 border border-current bg-transparent hover:bg-black/10 size-8 justify-center"
+                                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none hover:shadow-shadow border border-current bg-transparent hover:-translate-y-0.5 hover:bg-black/10 size-8 justify-center"
                                     data-headlessui-state=""
                                     data-testid="info-field-copy-button"
                                     type="button"
@@ -880,7 +880,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                                     mpd://127.0.0.1:6600
                                   </div>
                                   <button
-                                    class="inline-flex cursor-pointer items-center rounded-md whitespace-nowrap transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 border border-current bg-transparent hover:bg-black/10 size-8 justify-center"
+                                    class="feedback-surface active:translate-x-shadow-x active:translate-y-shadow-y inline-flex cursor-pointer items-center overflow-hidden rounded-md whitespace-nowrap transition-all duration-300 [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)] outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 active:scale-[0.98] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none hover:shadow-shadow border border-current bg-transparent hover:-translate-y-0.5 hover:bg-black/10 size-8 justify-center"
                                     data-headlessui-state=""
                                     data-testid="info-field-copy-button"
                                     type="button"
@@ -1004,11 +1004,11 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                                         class="border-border bg-background-input relative h-3 w-full rounded-md border-(length:--border-width)"
                                       >
                                         <div
-                                          class="bg-primary absolute top-0 left-0 h-full rounded-l"
+                                          class="bg-primary absolute top-0 left-0 h-full rounded-l transition-[width] duration-150 ease-out"
                                           style="width: 50%;"
                                         />
                                         <div
-                                          class="border-border absolute top-1/2 -ml-2 h-5 w-5 -translate-y-1/2 rounded-full border-(length:--border-width) bg-white"
+                                          class="border-border absolute top-1/2 -ml-2 h-5 w-5 -translate-y-1/2 rounded-full border-(length:--border-width) bg-white transition-[left] duration-150 ease-out"
                                           style="left: 50%;"
                                         />
                                       </div>
@@ -1051,7 +1051,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                                   Skip duration
                                 </label>
                                 <input
-                                  class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none bg-background-input h-10 rounded-md border-(length:--border-width)"
+                                  class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none bg-background-input h-10 rounded-md border-(length:--border-width)"
                                   data-headlessui-state=""
                                   id="input-:ro:"
                                   inputmode="numeric"
@@ -1076,7 +1076,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                                   Crossfade
                                 </label>
                                 <input
-                                  class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none bg-background-input h-10 rounded-md border-(length:--border-width)"
+                                  class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none bg-background-input h-10 rounded-md border-(length:--border-width)"
                                   data-headlessui-state=""
                                   id="input-:rq:"
                                   inputmode="numeric"
@@ -1101,7 +1101,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                                   Stream expiry time
                                 </label>
                                 <input
-                                  class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none bg-background-input h-10 rounded-md border-(length:--border-width)"
+                                  class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none bg-background-input h-10 rounded-md border-(length:--border-width)"
                                   data-headlessui-state=""
                                   id="input-:rs:"
                                   inputmode="numeric"
@@ -1126,7 +1126,7 @@ exports[`Settings view > (Snapshot) renders the settings view 1`] = `
                                   Stream resolution retries
                                 </label>
                                 <input
-                                  class="border-border text-foreground placeholder:text-foreground-secondary w-full px-3 transition-colors focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none bg-background-input h-10 rounded-md border-(length:--border-width)"
+                                  class="border-border text-foreground placeholder:text-foreground-secondary hover:border-foreground/60 w-full px-3 transition-[background-color,border-color,box-shadow,color] duration-150 ease-out focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none bg-background-input h-10 rounded-md border-(length:--border-width)"
                                   data-headlessui-state=""
                                   id="input-:ru:"
                                   inputmode="numeric"
