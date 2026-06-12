@@ -94,8 +94,7 @@
 }
 
 /* 4. Estilos de Botones y Superficies Interactivas (Fluent Control Style) */
-:root[data-theme-id='nuclear:fluent'] button,
-:root[data-theme-id='nuclear:fluent'] [class*="feedback-surface"] {
+:root[data-theme-id='nuclear:fluent'] .feedback-surface {
   box-shadow: none !important;
   border: 1px solid rgba(255, 255, 255, 0.05) !important;
   background-color: rgba(255, 255, 255, 0.03) !important;
@@ -103,27 +102,23 @@
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-:root[data-theme-id='nuclear:fluent'][data-theme='light'] button,
-:root[data-theme-id='nuclear:fluent'][data-theme='light'] [class*="feedback-surface"] {
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] .feedback-surface {
   border: 1px solid rgba(0, 0, 0, 0.05) !important;
   background-color: rgba(0, 0, 0, 0.02) !important;
 }
 
-:root[data-theme-id='nuclear:fluent'] button:hover,
-:root[data-theme-id='nuclear:fluent'] [class*="feedback-surface"]:hover {
+:root[data-theme-id='nuclear:fluent'] .feedback-surface:hover {
   background-color: rgba(255, 255, 255, 0.08) !important;
   border-color: rgba(255, 255, 255, 0.12) !important;
   transform: translateY(-1px) !important;
 }
 
-:root[data-theme-id='nuclear:fluent'][data-theme='light'] button:hover,
-:root[data-theme-id='nuclear:fluent'][data-theme='light'] [class*="feedback-surface"]:hover {
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] .feedback-surface:hover {
   background-color: rgba(0, 0, 0, 0.05) !important;
   border-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-:root[data-theme-id='nuclear:fluent'] button:active,
-:root[data-theme-id='nuclear:fluent'] [class*="feedback-surface"]:active {
+:root[data-theme-id='nuclear:fluent'] .feedback-surface:active {
   background-color: rgba(255, 255, 255, 0.05) !important;
   transform: translateY(0.5px) !important;
 }
@@ -206,3 +201,91 @@
   border-color: rgba(255, 255, 255, 0.08) !important;
   transform: translateY(-2px) !important;
 }
+
+/* 9. Botones con Clase bg-primary en el Toolbar (Fluent Button Accent) */
+:root[data-theme-id='nuclear:fluent'] button.bg-primary {
+  background: linear-gradient(180deg, var(--primary) 0%, color-mix(in srgb, var(--primary) 85%, black) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15) !important;
+  border-radius: 6px !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] button.bg-primary:hover {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 110%, white) 0%, var(--primary) 100%) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.22) !important;
+}
+
+/* 10. Sidebar Navigation Items Activos */
+:root[data-theme-id='nuclear:fluent'] [data-testid="sidebar-navigation-item"] {
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
+  border-radius: 6px !important;
+  transition: all 0.15s ease-out !important;
+  transform: none !important;
+  margin-bottom: 2px !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] [data-testid="sidebar-navigation-item"].bg-primary {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  border-left: 3px solid var(--primary) !important;
+  border-radius: 0 6px 6px 0 !important;
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] [data-testid="sidebar-navigation-item"]:not(.bg-primary):hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: transparent !important;
+}
+
+/* 11. Rediseño de la Tabla de Canciones (TrackTable) */
+:root[data-theme-id='nuclear:fluent'] table {
+  border: none !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] thead tr {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: var(--foreground-secondary) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] thead tr {
+  background: rgba(0, 0, 0, 0.03) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+  color: var(--foreground-secondary) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'] tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03) !important;
+}
+
+/* 12. Input Addon de Búsqueda (Filtro en TrackTable Toolbar) */
+:root[data-theme-id='nuclear:fluent'] div:has(> input) div.bg-primary {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: var(--foreground-secondary) !important;
+}
+
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] div:has(> input) div.bg-primary {
+  background-color: rgba(0, 0, 0, 0.02) !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+/* 13. Rediseño del Banner de Detalle de Playlist */
+:root[data-theme-id='nuclear:fluent'] div:has(> [data-testid="playlist-detail-title"]) {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 20%, transparent) 0%, rgba(32, 32, 32, 0.5) 100%) !important;
+  backdrop-filter: blur(24px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(140%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25) !important;
+  border-radius: 16px !important;
+}
+
+:root[data-theme-id='nuclear:fluent'][data-theme='light'] div:has(> [data-testid="playlist-detail-title"]) {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 15%, transparent) 0%, rgba(255, 255, 255, 0.6) 100%) !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06) !important;
+  border-radius: 16px !important;
+}
+
